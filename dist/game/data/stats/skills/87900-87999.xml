@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="87901" toLevel="1" name="Divine Guardian - Rush">
+		<!-- Rushes to the enemy. -->
+		<icon>icon.s_st_wing_leap</icon>
+		<operateType>A1</operateType>
+		<castRange>700</castRange>
+		<hitTime>1000</hitTime>
+		<effectPoint>-500</effectPoint>
+	</skill>
+	<skill id="87902" toLevel="1" name="Divine Guardian - Rush">
+		<!-- Rushes to the enemy. -->
+		<icon>icon.s_st_wing_leap</icon>
+		<operateType>A1</operateType>
+		<castRange>700</castRange>
+		<hitTime>1000</hitTime>
+		<effectPoint>500</effectPoint>
+	</skill>
+	<skill id="87903" toLevel="1" name="Divine Guardian - Return">
+		<!-- Goes back. -->
+		<icon>icon.s_st_wing_leap</icon>
+		<operateType>A1</operateType>
+		<castRange>700</castRange>
+		<hitTime>1000</hitTime>
+		<effectPoint>-500</effectPoint>
+	</skill>
+	<skill id="87904" toLevel="1" name="Divine Guardian - Return">
+		<!-- Goes back. -->
+		<icon>icon.s_st_wing_leap</icon>
+		<operateType>A1</operateType>
+		<castRange>700</castRange>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="87911" toLevel="4" name="Might">
+		<!-- P. Atk. +80 -->
+		<icon>icon.skill1068</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLevel>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">3</value>
+			<value level="2">20</value>
+			<value level="3">40</value>
+			<value level="4">76</value>
+		</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalAttack">
+				<amount>
+					<value level="1">80</value>
+					<value level="2">150</value>
+					<value level="3">230</value>
+					<value level="4">250</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87912" toLevel="4" name="Shield">
+		<!-- P. Def. +100 -->
+		<icon>icon.skill1040</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLevel>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">2</value>
+			<value level="2">20</value>
+			<value level="3">40</value>
+			<value level="4">76</value>
+		</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">100</value>
+					<value level="2">200</value>
+					<value level="3">300</value>
+					<value level="4">330</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87913" toLevel="4" name="Empower">
+		<!-- M. Atk. +100 -->
+		<icon>icon.skill1059</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLevel>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">30</value>
+			<value level="3">40</value>
+			<value level="4">50</value>
+		</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalAttack">
+				<amount>
+					<value level="1">100</value>
+					<value level="2">200</value>
+					<value level="3">300</value>
+					<value level="4">330</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87914" toLevel="3" name="Magic Barrier">
+		<!-- M. Def. +250 -->
+		<icon>icon.skill1036</icon>
+		<abnormalLevel>
+			<value level="1">2</value>
+			<value level="2">3</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>MD_UP</abnormalType>
+		<castRange>400</castRange>
+		<effectRange>900</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">30</value>
+			<value level="2">40</value>
+			<value level="3">30</value>
+		</magicLevel>
+		<mpConsume>
+			<value level="1">0</value>
+			<value level="2">0</value>
+			<value level="3">39</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">0</value>
+			<value level="2">0</value>
+			<value level="3">8</value>
+		</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">250</value>
+					<value level="2">350</value>
+					<value level="3">380</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87915" toLevel="3" name="Haste">
+		<!-- Atk. Spd. +15% -->
+		<icon>icon.skill1086</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>ATTACK_TIME_DOWN</abnormalType>
+		<castRange>-1</castRange>
+		<effectRange>900</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<itemConsumeCount>
+			<value level="1">3</value>
+			<value level="2">3</value>
+			<value level="3">5</value>
+		</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">40</value>
+			<value level="3">76</value>
+		</magicLevel>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">33</value>
+					<value level="3">35</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87916" toLevel="4" name="Acumen">
+		<!-- Casting Spd. +15% -->
+		<icon>icon.skill1085</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>CASTING_TIME_DOWN</abnormalType>
+		<castRange>400</castRange>
+		<effectRange>900</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<itemConsumeCount>3</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">35</value>
+			<value level="3">48</value>
+			<value level="4">52</value>
+		</magicLevel>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">23</value>
+					<value level="3">30</value>
+					<value level="4">33</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87917" toLevel="3" name="Wind Walk">
+		<!-- Speed +20 -->
+		<icon>icon.skill1204</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>SPEED_UP</abnormalType>
+		<castRange>400</castRange>
+		<effectRange>900</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">30</value>
+			<value level="3">42</value>
+		</magicLevel>
+		<itemConsumeCount>3</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">33</value>
+					<value level="3">35</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87918" toLevel="3" name="Berserker Spirit">
+		<!-- Max HP -20%. Max MP -20%. P. Atk. +5%. M. Atk. +10%. Atk. Spd. +5%. Casting Spd. +5%. Speed +5 -->
+		<icon>icon.skill1062</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>BERSERKER</abnormalType>
+		<castRange>-1</castRange>
+		<effectRange>900</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">30</value>
+			<value level="2">40</value>
+			<value level="3">76</value>
+		</magicLevel>
+		<itemConsumeCount>
+			<value level="1">3</value>
+			<value level="2">3</value>
+			<value level="3">5</value>
+		</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">-20</value>
+					<value level="2">-15</value>
+					<value level="3">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">-20</value>
+					<value level="2">-15</value>
+					<value level="3">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttack">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+					<value level="3">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttack">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87919" toLevel="4" name="Focus">
+		<!-- P. Critical Rate +20 -->
+		<icon>icon.skill1077</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLevel>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<operateType>P</operateType>
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">30</value>
+			<value level="3">40</value>
+			<value level="4">76</value>
+		</magicLevel>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">30</value>
+					<value level="3">40</value>
+					<value level="4">42</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87920" toLevel="4" name="Death Whisper">
+		<!-- P. Critical Damage +25% -->
+		<icon>icon.skill1242</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLevel>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">30</value>
+			<value level="3">40</value>
+			<value level="4">76</value>
+		</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">25</value>
+					<value level="2">30</value>
+					<value level="3">35</value>
+					<value level="4">38</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87921" toLevel="3" name="Wild Magic">
+		<!-- M. Skill Critical Rate +10 -->
+		<icon>icon.skill1303</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>MAGIC_CRITICAL_UP</abnormalType>
+		<castRange>400</castRange>
+		<effectRange>900</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">62</value>
+			<value level="2">70</value>
+			<value level="3">76</value>
+		</magicLevel>
+		<itemConsumeCount>3</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87922" toLevel="4" name="Clarity">
+		<!-- Song/ Dance/ P. Skill MP Consumption -10%. M. Skill MP Consumption -4% -->
+		<icon>icon.skill1397</icon>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLevel>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">58</value>
+			<value level="2">66</value>
+			<value level="3">74</value>
+			<value level="4">76</value>
+		</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-10</value>
+					<value level="2">-15</value>
+					<value level="3">-20</value>
+					<value level="4">-21</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-4</value>
+					<value level="2">-7</value>
+					<value level="3">-10</value>
+					<value level="4">-11</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-10</value>
+					<value level="2">-15</value>
+					<value level="3">-20</value>
+					<value level="4">-21</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87923" toLevel="2" name="HP Recovery">
+		<!-- Recovers 359 HP every 9.9 sec. -->
+		<icon>icon.skill0211</icon>
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">50</value>
+		</magicLevel>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>HP_REGEN_UP</abnormalType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeCount>
+			<value level="1">3</value>
+			<value level="2">10</value>
+		</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="HealOverTime">
+				<power>
+					<value level="1">20</value>
+					<value level="2">60</value>
+				</power>
+				<ticks>3</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87924" toLevel="3" name="MP Recovery">
+		<!-- Recovers 99 MP every 9.9 sec. -->
+		<icon>icon.skill0213</icon>
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">50</value>
+			<value level="3">60</value>
+		</magicLevel>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>MP_REGEN_UP</abnormalType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeCount>
+			<value level="1">3</value>
+			<value level="2">10</value>
+			<value level="3">20</value>
+			<value fromLevel="3" toLevel="3" fromSubLevel="1001" toSubLevel="1001">22</value>
+			<value fromLevel="3" toLevel="3" fromSubLevel="1002" toSubLevel="1002">23</value>
+			<value fromLevel="3" toLevel="3" fromSubLevel="1003" toSubLevel="1003">25</value>
+		</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="ManaHealOverTime">
+				<power>
+					<value level="1">10</value> <!-- 99-100 -->
+					<value level="2">12</value> <!-- 119-120 -->
+					<value level="3">16</value> <!-- 138-139 -->
+					<value fromLevel="3" toLevel="3" fromSubLevel="1001" toSubLevel="1001">19</value> <!-- 164-165 -->
+					<value fromLevel="3" toLevel="3" fromSubLevel="1002" toSubLevel="1002">21</value> <!-- 181-182 -->
+					<value fromLevel="3" toLevel="3" fromSubLevel="1003" toSubLevel="1003">21</value>
+				</power>
+				<ticks>
+					<value level="1">15</value> <!-- 9.9 sec -->
+					<value level="2">15</value>
+					<value level="3">13</value> <!-- 8.6 sec -->
+				</ticks>
+			</effect>
+			<effect name="MagicMpCost" fromLevel="3" toLevel="3" fromSubLevel="1003" toSubLevel="1003">
+				<amount>-2</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost" fromLevel="3" toLevel="3" fromSubLevel="1003" toSubLevel="1003">
+				<amount>-2</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87925" toLevel="1" name="Manage Inventory">
+		<!-- Basic inventory +12 -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="EnlargeSlot">
+				<amount>12</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87931" toLevel="1" name="STR Privilege">
+		<!-- Additional effects depend on STR value. <STR: 100-109>. - P. Skill Power +1%. <STR: 110-119>. - P. Skill Power +3%. <STR: 120+>. - P. Skill Power +7% -->
+		<icon>icon.s_st_privilege_str</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87932" toLevel="1" name="STR Privilege Lv. 1">
+		<!-- <STR: 100-109>. - P. Skill Power +1% -->
+		<icon>icon.s_st_privilege_str</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87933" toLevel="1" name="STR Privilege Lv. 2">
+		<!-- <STR: 110-119>. - P. Skill Power +3% -->
+		<icon>icon.s_st_privilege_str</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87934" toLevel="1" name="STR Privilege Lv. 3">
+		<!-- <STR: 120 or higher>. - P. Skill Power +7% -->
+		<icon>icon.s_st_privilege_str</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87939" toLevel="1" name="CON Privilege">
+		<!-- Depending on CON value additional stats are increased. <CON: 120-129>. - Skill Evasion +10%. <CON: 130-139>. - Skill Evasion +15%. <CON: 140 or higher>. - Skill Evasion +30% -->
+		<icon>icon.s_st_privilege_con</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87940" toLevel="1" name="CON Privilege Lv. 1">
+		<!-- <CON: 120-129>. - Skill Evasion +10% -->
+		<icon>icon.s_st_privilege_con</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87941" toLevel="1" name="CON Privilege Lv. 2">
+		<!-- <CON: 130-139>. - Skill Evasion +15% -->
+		<icon>icon.s_st_privilege_con</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87942" toLevel="1" name="CON Privilege Lv. 3">
+		<!-- <CON: 140 or higher>. - Skill Evasion +30% -->
+		<icon>icon.s_st_privilege_con</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="87951" toLevel="25" name="Noblesse Sacral Strike">
+		<!-- <font color="FFFF00">Noblesse Circlet effect</font>. Enemies: Increases the number of attacks. Raises the shield filled with the energy of light. <font color="FF0000">Enemies:</font>. Attacks <font color="FFFF00">twice</font> with 480 power. Ignores 10% of the target's defense. Critical. <font color="00FFFF">Allies:</font>. Recovers the target's HP with 300 power. <font color="FED7A0">The skill's effect changes based on the target.</font>. Grants Light points. -->
+		<icon>icon.s_st_sacred_bash</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<mpConsume>
+			<value level="1">18</value>
+			<value level="2">31</value>
+			<value level="3">38</value>
+			<value level="4">43</value>
+			<value level="5">45</value>
+			<value level="6">47</value>
+			<value level="7">48</value>
+			<value level="8">50</value>
+			<value level="9">51</value>
+			<value level="10">53</value>
+			<value level="11">54</value>
+			<value level="12">56</value>
+			<value level="13">57</value>
+			<value level="14">59</value>
+			<value level="15">60</value>
+			<value level="16">62</value>
+			<value level="17">63</value>
+			<value level="18">65</value>
+			<value level="19">66</value>
+			<value level="20">67</value>
+			<value level="21">68</value>
+			<value level="22">70</value>
+			<value level="23">71</value>
+			<value level="24">72</value>
+			<value level="25">73</value>
+		</mpConsume>
+	</skill>
+	<skill id="87952" toLevel="25" name="Noblesse Sacral Strike">
+		<icon>icon.s_st_sacred_bash</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>
+			<value level="1">-200</value>
+			<value level="2">-400</value>
+			<value level="3">-500</value>
+			<value level="4">-580</value>
+			<value level="5">-620</value>
+			<value level="6">-660</value>
+			<value level="7">-680</value>
+			<value level="8">-710</value>
+			<value level="9">-720</value>
+			<value level="10">-740</value>
+			<value level="11">-750</value>
+			<value level="12">-770</value>
+			<value level="13">-780</value>
+			<value level="14">-800</value>
+			<value level="15">-810</value>
+			<value level="16">-830</value>
+			<value level="17">-840</value>
+			<value level="18">-860</value>
+			<value level="19">-870</value>
+			<value level="20">-890</value>
+			<value level="21">-900</value>
+			<value level="22">-920</value>
+			<value level="23">-930</value>
+			<value level="24">-940</value>
+			<value level="25">-950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">18</value>
+			<value level="2">31</value>
+			<value level="3">38</value>
+			<value level="4">43</value>
+			<value level="5">45</value>
+			<value level="6">47</value>
+			<value level="7">48</value>
+			<value level="8">50</value>
+			<value level="9">51</value>
+			<value level="10">53</value>
+			<value level="11">54</value>
+			<value level="12">56</value>
+			<value level="13">57</value>
+			<value level="14">59</value>
+			<value level="15">60</value>
+			<value level="16">62</value>
+			<value level="17">63</value>
+			<value level="18">65</value>
+			<value level="19">66</value>
+			<value level="20">67</value>
+			<value level="21">68</value>
+			<value level="22">70</value>
+			<value level="23">71</value>
+			<value level="24">72</value>
+			<value level="25">73</value>
+		</mpConsume>
+	</skill>
+	<skill id="87953" toLevel="25" name="Noblesse Sacral Strike">
+		<icon>icon.s_st_sacred_bash</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>
+			<value level="1">200</value>
+			<value level="2">400</value>
+			<value level="3">500</value>
+			<value level="4">580</value>
+			<value level="5">620</value>
+			<value level="6">660</value>
+			<value level="7">680</value>
+			<value level="8">710</value>
+			<value level="9">720</value>
+			<value level="10">740</value>
+			<value level="11">750</value>
+			<value level="12">770</value>
+			<value level="13">780</value>
+			<value level="14">800</value>
+			<value level="15">810</value>
+			<value level="16">830</value>
+			<value level="17">840</value>
+			<value level="18">860</value>
+			<value level="19">870</value>
+			<value level="20">890</value>
+			<value level="21">900</value>
+			<value level="22">920</value>
+			<value level="23">930</value>
+			<value level="24">940</value>
+			<value level="25">950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">18</value>
+			<value level="2">31</value>
+			<value level="3">38</value>
+			<value level="4">43</value>
+			<value level="5">45</value>
+			<value level="6">47</value>
+			<value level="7">48</value>
+			<value level="8">50</value>
+			<value level="9">51</value>
+			<value level="10">53</value>
+			<value level="11">54</value>
+			<value level="12">56</value>
+			<value level="13">57</value>
+			<value level="14">59</value>
+			<value level="15">60</value>
+			<value level="16">62</value>
+			<value level="17">63</value>
+			<value level="18">65</value>
+			<value level="19">66</value>
+			<value level="20">67</value>
+			<value level="21">68</value>
+			<value level="22">70</value>
+			<value level="23">71</value>
+			<value level="24">72</value>
+			<value level="25">73</value>
+		</mpConsume>
+	</skill>
+	<skill id="87954" toLevel="15" name="Noblesse Purify">
+		<!-- <font color="FFFF00">Noblesse Circlet effect</font>. Enemies: Increases the number of attacks, decreases Shock Resistance. Allies: Additionally removes the Knockback debuff. Purifies the target with the sword filled with the power of light. <font color="FF0000">Enemies</font>. Attacks <font color="FFFF00">twice</font> with 1560 power. Applies the <font color="FFFF00">Light Break</font> effect to the target. Ignores 10% of the target's defense. Critical. <font color="FFFF00">Light Break</font>. Duration: 10 sec. Effect: Shock Resistance -50%. <font color="FFFF00">Allies</font>. Removes Imprisonment/ <font color="00FFFF">Knockback</font> from the target. <font color="FED7A0">The skill's effect changes based on the target.</font>. Grants Light points. -->
+		<icon>icon.s_st_purge</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<mpConsume>
+			<value level="1">31</value>
+			<value level="2">40</value>
+			<value level="3">46</value>
+			<value level="4">49</value>
+			<value level="5">52</value>
+			<value level="6">55</value>
+			<value level="7">58</value>
+			<value level="8">61</value>
+			<value level="9">64</value>
+			<value level="10">67</value>
+			<value level="11">69</value>
+			<value level="12">71</value>
+			<value level="13">72</value>
+			<value level="14">73</value>
+			<value level="15">74</value>
+		</mpConsume>
+	</skill>
+	<skill id="87955" toLevel="15" name="Noblesse Purify">
+		<icon>icon.s_st_purge</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-540</value>
+			<value level="3">-640</value>
+			<value level="4">-700</value>
+			<value level="5">-730</value>
+			<value level="6">-760</value>
+			<value level="7">-790</value>
+			<value level="8">-820</value>
+			<value level="9">-850</value>
+			<value level="10">-880</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">31</value>
+			<value level="2">40</value>
+			<value level="3">46</value>
+			<value level="4">49</value>
+			<value level="5">52</value>
+			<value level="6">55</value>
+			<value level="7">58</value>
+			<value level="8">61</value>
+			<value level="9">64</value>
+			<value level="10">67</value>
+			<value level="11">69</value>
+			<value level="12">71</value>
+			<value level="13">72</value>
+			<value level="14">73</value>
+			<value level="15">74</value>
+		</mpConsume>
+	</skill>
+	<skill id="87956" toLevel="15" name="Noblesse Purify">
+		<icon>icon.s_st_purge</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>
+			<value level="1">400</value>
+			<value level="2">540</value>
+			<value level="3">640</value>
+			<value level="4">700</value>
+			<value level="5">730</value>
+			<value level="6">760</value>
+			<value level="7">790</value>
+			<value level="8">820</value>
+			<value level="9">850</value>
+			<value level="10">880</value>
+			<value level="11">910</value>
+			<value level="12">920</value>
+			<value level="13">930</value>
+			<value level="14">940</value>
+			<value level="15">950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">31</value>
+			<value level="2">40</value>
+			<value level="3">46</value>
+			<value level="4">49</value>
+			<value level="5">52</value>
+			<value level="6">55</value>
+			<value level="7">58</value>
+			<value level="8">61</value>
+			<value level="9">64</value>
+			<value level="10">67</value>
+			<value level="11">69</value>
+			<value level="12">71</value>
+			<value level="13">72</value>
+			<value level="14">73</value>
+			<value level="15">74</value>
+		</mpConsume>
+	</skill>
+	<skill id="87957" toLevel="15" name="Noblesse Judgment">
+		<!-- <font color="FFFF00">Noblesse Circlet effect</font>. Enemies: Increases defense ignore, decreases the target's Shock Resistance. Attacks enemies with the sword filled with the power of light. Attacks twice with 7386 power. Applies the <font color="FFFF00">Light Break</font> effect to the target. <font color="FFFF00">Light Break</font>. Duration: 10 sec. Effect: Shock Resistance -50%. Ignores <font color="FFFF00">25%</font> of the target's defense. Critical. PvP: Attacks up to 6 targets. PvE: Attacks up to 6 targets. Grants Light points. -->
+		<icon>icon.s_st_justice</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1580</value>
+			<value level="3">-1620</value>
+			<value level="4">-1660</value>
+			<value level="5">-1700</value>
+			<value level="6">-1720</value>
+			<value level="7">-1740</value>
+			<value level="8">-1760</value>
+			<value level="9">-1780</value>
+			<value level="10">-1800</value>
+			<value level="11">-1820</value>
+			<value level="12">-1840</value>
+			<value level="13">-1860</value>
+			<value level="14">-1880</value>
+			<value level="15">-1900</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">88</value>
+			<value level="2">91</value>
+			<value level="3">94</value>
+			<value level="4">96</value>
+			<value level="5">98</value>
+			<value level="6">99</value>
+			<value level="7">101</value>
+			<value level="8">102</value>
+			<value level="9">103</value>
+			<value level="10">104</value>
+			<value level="11">105</value>
+			<value level="12">106</value>
+			<value level="13">107</value>
+			<value level="14">109</value>
+			<value level="15">110</value>
+		</mpConsume>
+	</skill>
+	<skill id="87960" toLevel="10" name="Noblesse Light Discharge">
+		<!-- <font color="FFFF00">Noblesse Circlet effect</font>. Enemies: Increases defense ignore. Allies: Increases Debuff/ Anomaly Resistance and M. Def. <Skill with fixed cooldown>. Fires the charged light. <font color="FF0000">Enemies</font>. Attacks the target and nearby enemies twice with 5129 power. Stuns them with a certain chance. Ignores <font color="FFFF00">30%</font> of the target's defense. Critical. PvP: Attacks up to 6 targets. PvE: Attacks up to 6 targets. <font color="00FFFF">Allies</font>. Recovers HP once with 1900 power. Recovers HP over time. <font color="FFFF00">Debuff/ Anomaly Resistance +20%. M. Def. +10%</font>. Affects up to 6 targets. <font color="FED7A0">The skill's effect changes based on the target.</font>. Grants Light points. -->
+		<icon>icon.s_st_light_discharge</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<mpConsume>
+			<value level="1">103</value>
+			<value level="2">111</value>
+			<value level="3">117</value>
+			<value level="4">119</value>
+			<value level="5">122</value>
+			<value level="6">123</value>
+			<value level="7">125</value>
+			<value level="8">126</value>
+			<value level="9">127</value>
+			<value level="10">129</value>
+		</mpConsume>
+	</skill>
+	<skill id="87961" toLevel="10" name="Noblesse Light Discharge">
+		<icon>icon.s_st_light_discharge</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1640</value>
+			<value level="3">-1720</value>
+			<value level="4">-1760</value>
+			<value level="5">-1800</value>
+			<value level="6">-1820</value>
+			<value level="7">-1840</value>
+			<value level="8">-1860</value>
+			<value level="9">-1880</value>
+			<value level="10">-1900</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">103</value>
+			<value level="2">111</value>
+			<value level="3">117</value>
+			<value level="4">119</value>
+			<value level="5">122</value>
+			<value level="6">123</value>
+			<value level="7">125</value>
+			<value level="8">126</value>
+			<value level="9">127</value>
+			<value level="10">129</value>
+		</mpConsume>
+	</skill>
+	<skill id="87962" toLevel="10" name="Noblesse Light Discharge">
+		<!-- By the power of light recovers HP over time. -->
+		<icon>icon.s_st_light_discharge</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>
+			<value level="1">1520</value>
+			<value level="2">1640</value>
+			<value level="3">1720</value>
+			<value level="4">1760</value>
+			<value level="5">1800</value>
+			<value level="6">1820</value>
+			<value level="7">1840</value>
+			<value level="8">1860</value>
+			<value level="9">1880</value>
+			<value level="10">1900</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">103</value>
+			<value level="2">111</value>
+			<value level="3">117</value>
+			<value level="4">119</value>
+			<value level="5">122</value>
+			<value level="6">123</value>
+			<value level="7">125</value>
+			<value level="8">126</value>
+			<value level="9">127</value>
+			<value level="10">129</value>
+		</mpConsume>
+	</skill>
+	<skill id="87990" toLevel="1" name="Divine Wings Lv. 3">
+		<!-- The energy of light takes a form of brightly shining wings. P. Skill Power +7% -->
+		<icon>icon.s_st_sacred_light</icon>
+		<operateType>P</operateType>
+		<isMagic>5</isMagic>
+		<abnormalVisualEffect>V_HE_SACRED_TEMPLAR_03WING</abnormalVisualEffect>
+	</skill>
+	<skill id="87991" toLevel="1" name="Lord Knight - MP Recovery">
+		<icon>icon.skill19169</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalSkillPower">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Use lowercase for searchText and answers. -->
+<!-- You can use specific fpcName or ALL to use with all fpcs. -->
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/FakePlayerChatData.xsd">
+	<fakePlayerChat fpcName="ALL" searchMethod="EQUALS" searchText="hola" answers="hola;hi;hola ahí;hola allí" />
+	<fakePlayerChat fpcName="ALL" searchMethod="EQUALS" searchText="hey" answers="hey hey;hey;hey allí" />
+	<fakePlayerChat fpcName="ALL" searchMethod="EQUALS" searchText="hola" answers="hola;hi;hola ahí;hola allí" />
+	<fakePlayerChat fpcName="Evi" searchMethod="EQUALS" searchText="¿aquí?" answers="sí;ocupado;busco algo" />
+	<fakePlayerChat fpcName="Evi" searchMethod="EQUALS" searchText="¿qué pasa?" answers="bien;ocupado;busco algo" />
+	<fakePlayerChat fpcName="Evi" searchMethod="EQUALS" searchText="¿qué?" answers="algo :P;algo para mí" />
+	<fakePlayerChat fpcName="Evi" searchMethod="EQUALS" searchText="¿por qué?" answers="porque;no lo sé;¿qué?" />
+	<fakePlayerChat fpcName="Evi" searchMethod="EQUALS" searchText="¿en serio?" answers="en serio;sí;por supuesto" />
+	<fakePlayerChat fpcName="Evi" searchMethod="EQUALS" searchText="gracias" answers=":);:D;:*" />
+	<fakePlayerChat fpcName="Evi" searchMethod="EQUALS" searchText="gracias a ti" answers=":);:D;:*" />
+	<fakePlayerChat fpcName="Evi" searchMethod="STARTS_WITH" searchText="¿cómo estás?" answers="bien;bueno;ocupado" />
+	<fakePlayerChat fpcName="Evi" searchMethod="STARTS_WITH" searchText="¿sabes?" answers="no;lo siento;no, no sé" />
+	<fakePlayerChat fpcName="Evi" searchMethod="STARTS_WITH" searchText="¿dónde puedo" answers="no lo sé;sin idea;pide a alguien más :P" />
+	<fakePlayerChat fpcName="Evi" searchMethod="STARTS_WITH" searchText="¿puedo preguntarte" answers="sí;¿qué?;dime" />
+	<fakePlayerChat fpcName="Evi" searchMethod="CONTAINS" searchText="servidor;ja;problema" answers="está bien;no lo sé;no creo..." />
+	<fakePlayerChat fpcName="Evi" searchMethod="CONTAINS" searchText="servidor;ja;bug" answers="está bien;no lo sé;no creo..." />
+	<fakePlayerChat fpcName="Evi" searchMethod="CONTAINS" searchText="es el;servidor;bueno" answers="está bien :D;me gusta :P;sí, lo es :)" />
+	<fakePlayerChat fpcName="Evi" searchMethod="CONTAINS" searchText="¿dónde;vas;?" answers="busco algo;revisando cosas;buscando personas curiosas :P" />
+	<fakePlayerChat fpcName="Evi" searchMethod="CONTAINS" searchText="¿estás;bromeando" answers="^^;:D;:P" />
+</list>

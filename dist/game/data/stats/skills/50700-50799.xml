@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="50700" toLevel="11" name="Enchant Effect: A-grade Upper Armor for Hunter">
+		<!-- <Enchant Effect: A-grade Upper Armor for Hunter>. Acquired XP/ SP +1% -->
+		<icon>icon.armor_t92_u_i02</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50701" toLevel="11" name="Enchant Effect: A-grade Lower Armor for Hunter">
+		<!-- <Enchant Effect: A-grade Lower Armor for Hunter>. Acquired XP/ SP +1% -->
+		<icon>icon.armor_t92_l_i02</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50702" toLevel="10" name="Princess Molrang Doll Lv. 1">
+		<!-- Speed +1 -->
+		<icon>icon.princess_molrang_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50703" toLevel="10" name="Deiman Doll Lv. 1">
+		<!-- Knockback Resistance +1% -->
+		<icon>icon.hb_deiman_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50704" toLevel="10" name="Satina Doll Lv. 1">
+		<!-- Imprisonment Resistance +1% -->
+		<icon>icon.jardna_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50705" toLevel="10" name="Ryuminir Doll Lv. 1">
+		<!-- Hold Resistance +1% -->
+		<icon>icon.ryuminir_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50706" toLevel="10" name="Aizen Kelsour Doll Lv. 1">
+		<!-- Suppression Resistance +1% -->
+		<icon>icon.ajen_cansyuler_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50707" toLevel="10" name="King Ignis Doll Lv. 1">
+		<!-- Fire Attack +10. P. Atk. +50 -->
+		<icon>icon.fire_elemental_king_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50708" toLevel="10" name="Queen Nebula Doll Lv. 1">
+		<!-- Water Attack +10. M. Atk. +50 -->
+		<icon>icon.water_elemental_king_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50709" toLevel="10" name="King Procella Doll Lv. 1">
+		<!-- Wind Attack +10. M. Def. +50 -->
+		<icon>icon.wind_elemental_king_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50710" toLevel="10" name="King Petram Doll Lv. 1">
+		<!-- Earth Attack +10. P. Def. +50 -->
+		<icon>icon.earth_elemental_king_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50711" toLevel="10" name="Tiron Doll Lv. 1">
+		<!-- Max HP +100. Max MP +100. Imprisonment Atk. Rate +1% -->
+		<icon>icon.supporter_tron_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50712" toLevel="10" name="Scarlet van Halisha Doll Lv. 1">
+		<!-- MEN +1. Knockback Atk. Rate +1% -->
+		<icon>icon.follower_of_frintessa_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50713" toLevel="10" name="Anakim Doll Lv. 1">
+		<!-- M. Atk. +500. Hold Atk. Rate +1% -->
+		<icon>icon.anakim_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50714" toLevel="10" name="Lilith Doll Lv. 1">
+		<!-- P. Atk. +500. Suppression Atk. Rate +1% -->
+		<icon>icon.lilith_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50715" toLevel="10" name="Ferion Doll Lv. 1">
+		<!-- Skill Power +2%. All received Critical Damage -100. Max HP +500. Max MP +500. Knockback Resistance +3% -->
+		<icon>icon.heaven_perion_doll_00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50716" toLevel="10" name="Ferion's Shield Lv. 1">
+		<!-- When hit applies Ferion's Slow to the target that attack the character. -->
+		<icon>icon.heaven_perion_doll_00</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="50717" toLevel="10" name="Ferion's Slow Lv. 1">
+		<!-- Slow from attacking a target affected by Ferion's Shield. -->
+		<icon>icon.heaven_perion_doll_00</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="50718" toLevel="6" name="Eva's Earring">
+		<!-- An earring imbued with Eva's power. <<font color="00FF00">Base effect</font>>. MP Recovery Rate <font color="FFBB00">+10</font> -->
+		<icon>icon.r95_earring_i01</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50719" toLevel="6" name="Shillien's Earring">
+		<!-- An earring imbued with Shillien's power. <<font color="00FF00">Base effect</font>>. Absorbs <font color="FFBB00">1%</font> of inflicted damage as HP. -->
+		<icon>icon.accessary_sages_earing_i00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50720" toLevel="6" name="Sayha's Ring">
+		<!-- A ring imbued with Sayha's power. <<font color="00FF00">Base effect</font>>. Atk. Spd. <font color="FFBB00">+20</font>. Casting Spd. <font color="FFBB00">+20</font> -->
+		<icon>icon.accessary_ring_of_aurakyria_i00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50721" toLevel="6" name="Pa'agrio's Ring">
+		<!-- A ring imbued with Pa'agrio's power. <<font color="00FF00">Base effect</font>>. P. Atk. <font color="FFBB00">+50</font>. M. Atk. <font color="FFBB00">+50</font> -->
+		<icon>icon.accessary_another_worlds_ring_i00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50722" toLevel="6" name="Einhasad's Necklace">
+		<!-- A necklace imbued with Einhasad's power. <<font color="00FF00">Base effect</font>>. Skill Cooldown <font color="FFBB00">-1%</font> -->
+		<icon>icon.r95_necklace_i00</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50723" toLevel="20" name="Blue Dragon's Rune">
+		<!-- P. Atk. +20. M. Atk. +20 -->
+		<icon>icon.bluedragon_rune</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50724" toLevel="3" name="Dragon's Magic Resistance">
+		<!-- All Earrings M. Def. <font color=eeaa22>+10</font>. All Rings M. Def. <font color=eeaa22>+10</font>. All Necklaces M. Def. <font color=eeaa22>+10</font> -->
+		<icon>icon.bluedragon_rune</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+	</skill>
+	<skill id="50725" toLevel="20" name="Blue Dragon's Rune">
+		<!-- P. Atk. +10. M. Atk. +10 -->
+		<icon>icon.bluedragon_rune</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="50726" toLevel="3" name="Dragon Recharge">
+		<!-- Recovers 200 MP. -->
+		<icon>icon.bluedragon_rune</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+</list>

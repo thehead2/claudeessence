@@ -1,0 +1,3383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="87700" toLevel="1" name="Constraint - High Elves">
+		<!-- <<font color="FFBB00">Constraint effect for High Elves</font>>. Max HP -500 -->
+		<icon>icon.s_highelf_race_mark</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-400</effectPoint>
+		<abnormalTime>10</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">-500</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87701" toLevel="20" name="Fire Sphere">
+		<!-- <font color="FF0000">Fire magic</font>. A sphere of raging flame attacks the enemy. Inflicts magic damage with 32 power. -->
+		<icon>icon.s_sp_flame_orb</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>4500</hitTime>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">-200</value>
+			<value level="3">-400</value>
+			<value level="4">-580</value>
+			<value level="5">-660</value>
+			<value level="6">-720</value>
+			<value level="7">-740</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">16</value>
+			<value level="2">22</value>
+			<value level="3">27</value>
+			<value level="4">31</value>
+			<value level="5">34</value>
+			<value level="6">37</value>
+			<value level="7">39</value>
+			<value level="8">41</value>
+			<value level="9">42</value>
+			<value level="10">44</value>
+			<value level="11">46</value>
+			<value level="12">48</value>
+			<value level="13">51</value>
+			<value level="14">53</value>
+			<value level="15">55</value>
+			<value level="16">57</value>
+			<value level="17">59</value>
+			<value level="18">61</value>
+			<value level="19">63</value>
+			<value level="20">65</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87701</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">32</value>
+					<value level="2">42</value>
+					<value level="3">84</value>
+					<value level="4">94</value>
+					<value level="5">110</value>
+					<value level="6">133</value>
+					<value level="7">147</value>
+					<value level="8">159</value>
+					<value level="9">165</value>
+					<value level="10">172</value>
+					<value level="11">178</value>
+					<value level="12">184</value>
+					<value level="13">191</value>
+					<value level="14">199</value>
+					<value level="15">210</value>
+					<value level="16">216</value>
+					<value level="17">222</value>
+					<value level="18">228</value>
+					<value level="19">235</value>
+					<value level="20">242</value>
+				</power>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="3">-23</value>
+					<value level="4">-23</value>
+					<value level="5">-23</value>
+					<value level="6">-23</value>
+					<value level="7">-23</value>
+					<value level="8">-23</value>
+					<value level="9">-23</value>
+					<value level="10">-23</value>
+					<value level="11">-23</value>
+					<value level="12">-23</value>
+					<value level="13">-23</value>
+					<value level="14">-23</value>
+					<value level="15">-23</value>
+					<value level="16">-23</value>
+					<value level="17">-23</value>
+					<value level="18">-23</value>
+					<value level="19">-23</value>
+					<value level="20">-23</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87702" toLevel="20" name="Ice Sphere">
+		<!-- <font color="00AAFF">Ice magic</font>. A sphere of freezing cold attacks the enemy. Inflicts magic damage with 32 power. -->
+		<icon>icon.s_sp_freezing_orb</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>4500</hitTime>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">-200</value>
+			<value level="3">-400</value>
+			<value level="4">-580</value>
+			<value level="5">-660</value>
+			<value level="6">-720</value>
+			<value level="7">-740</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">16</value>
+			<value level="2">22</value>
+			<value level="3">27</value>
+			<value level="4">31</value>
+			<value level="5">34</value>
+			<value level="6">37</value>
+			<value level="7">39</value>
+			<value level="8">41</value>
+			<value level="9">42</value>
+			<value level="10">44</value>
+			<value level="11">46</value>
+			<value level="12">48</value>
+			<value level="13">51</value>
+			<value level="14">53</value>
+			<value level="15">55</value>
+			<value level="16">57</value>
+			<value level="17">59</value>
+			<value level="18">61</value>
+			<value level="19">63</value>
+			<value level="20">65</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87702</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">32</value>
+					<value level="2">42</value>
+					<value level="3">84</value>
+					<value level="4">94</value>
+					<value level="5">110</value>
+					<value level="6">133</value>
+					<value level="7">147</value>
+					<value level="8">159</value>
+					<value level="9">165</value>
+					<value level="10">172</value>
+					<value level="11">178</value>
+					<value level="12">184</value>
+					<value level="13">191</value>
+					<value level="14">199</value>
+					<value level="15">210</value>
+					<value level="16">216</value>
+					<value level="17">222</value>
+					<value level="18">228</value>
+					<value level="19">235</value>
+					<value level="20">242</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87703" toLevel="20" name="Blazing Tempest">
+		<!-- <font color="FF0000">Fire magic</font>. A blazing whirlwind attacks the target and nearby enemies. Inflicts magic damage with 137 power. <font color="FF0000">Ice Vulnerability</font> and <font color="FF0000">Blazing Whirlwind</font> are applied to the target. <font color="FF0000">Ice Vulnerability</font>. Decreases resistance to <font color="FF0000">ice magic</font>. If <font color="00AAFF">Fire Vulnerability</font> is applied to the target,. removes <font color="00AAFF">Fire Vulnerability</font>. <font color="00AAFF">Blazing Whirlwind</font>. If <font color="00AAFF">Icy Wind</font> is applied to the target, removes. <font color="77FF99">Icy Wind</font> and then triggers <font color="00AAFF">Circle Explosion</font>. <font color="77FF99">Circle Explosion</font>. Inflicts magic damage with 137 power. M. Def. -23%. PvP: attacks up to 8 targets. PvE: attacks up to 8 targets. -->
+		<icon>icon.s_sp_blazing_tempest</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5000</hitTime>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1540</value>
+			<value level="3">-1560</value>
+			<value level="4">-1580</value>
+			<value level="5">-1600</value>
+			<value level="6">-1620</value>
+			<value level="7">-1640</value>
+			<value level="8">-1660</value>
+			<value level="9">-1680</value>
+			<value level="10">-1700</value>
+			<value level="11">-1720</value>
+			<value level="12">-1740</value>
+			<value level="13">-1760</value>
+			<value level="14">-1780</value>
+			<value level="15">-1800</value>
+			<value level="16">-1820</value>
+			<value level="17">-1840</value>
+			<value level="18">-1860</value>
+			<value level="19">-1880</value>
+			<value level="20">-1900</value>
+		</effectPoint>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">93</value>
+			<value level="2">94</value>
+			<value level="3">95</value>
+			<value level="4">96</value>
+			<value level="5">97</value>
+			<value level="6">98</value>
+			<value level="7">99</value>
+			<value level="8">100</value>
+			<value level="9">102</value>
+			<value level="10">103</value>
+			<value level="11">104</value>
+			<value level="12">105</value>
+			<value level="13">107</value>
+			<value level="14">108</value>
+			<value level="15">109</value>
+			<value level="16">110</value>
+			<value level="17">112</value>
+			<value level="18">113</value>
+			<value level="19">114</value>
+			<value level="20">115</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-8</affectLimit>
+		<affectRange>250</affectRange>
+		<reuseDelayGroup>87703</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">137</value>
+					<value level="2">140</value>
+					<value level="3">143</value>
+					<value level="4">145</value>
+					<value level="5">148</value>
+					<value level="6">151</value>
+					<value level="7">153</value>
+					<value level="8">156</value>
+					<value level="9">159</value>
+					<value level="10">162</value>
+					<value level="11">164</value>
+					<value level="12">167</value>
+					<value level="13">171</value>
+					<value level="14">176</value>
+					<value level="15">180</value>
+					<value level="16">186</value>
+					<value level="17">191</value>
+					<value level="18">197</value>
+					<value level="19">202</value>
+					<value level="20">207</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87704" toLevel="20" name="Glacier Strike">
+		<!-- <font color="00AAFF">Ice magic</font>. A frosty glacier attacks the target and nearby enemies. Inflicts magic damage with 137 power. <font color="00AAFF">Fire Vulnerability</font> and <font color="00AAFF">Icy Wind</font> are applied to the target. <font color="00AAFF">Ice Vulnerability</font>. Decreases resistance to <font color="00AAFF">fire magic</font>. If <font color="FF0000">Ice Vulnerability</font> is applied to the target,. removes <font color="FF0000">Ice Vulnerability</font>. <font color="FF0000">Icy Wind</font>. If <font color="FF0000">Blazing Whirlwind</font> is applied to the target, removes. <font color="77FF99">Blazing Whirlwind</font> and then triggers <font color="FF0000">Circle Explosion</font>. <font color="77FF99">Circle Explosion</font>. Inflicts magic damage with 137 power. M. Def. -23%. PvP: attacks up to 8 targets. PvE: attacks up to 8 targets. -->
+		<icon>icon.s_sp_glacial_strike</icon>
+		<operateType>A1</operateType>
+		<basicProperty>MAGIC</basicProperty>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5000</hitTime>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1540</value>
+			<value level="3">-1560</value>
+			<value level="4">-1580</value>
+			<value level="5">-1600</value>
+			<value level="6">-1620</value>
+			<value level="7">-1640</value>
+			<value level="8">-1660</value>
+			<value level="9">-1680</value>
+			<value level="10">-1700</value>
+			<value level="11">-1720</value>
+			<value level="12">-1740</value>
+			<value level="13">-1760</value>
+			<value level="14">-1780</value>
+			<value level="15">-1800</value>
+			<value level="16">-1820</value>
+			<value level="17">-1840</value>
+			<value level="18">-1860</value>
+			<value level="19">-1880</value>
+			<value level="20">-1900</value>
+		</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">93</value>
+			<value level="2">94</value>
+			<value level="3">95</value>
+			<value level="4">96</value>
+			<value level="5">97</value>
+			<value level="6">98</value>
+			<value level="7">99</value>
+			<value level="8">100</value>
+			<value level="9">102</value>
+			<value level="10">103</value>
+			<value level="11">104</value>
+			<value level="12">105</value>
+			<value level="13">107</value>
+			<value level="14">108</value>
+			<value level="15">109</value>
+			<value level="16">110</value>
+			<value level="17">112</value>
+			<value level="18">113</value>
+			<value level="19">114</value>
+			<value level="20">115</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-8</affectLimit>
+		<affectRange>250</affectRange>
+		<reuseDelayGroup>87704</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">137</value>
+					<value level="2">140</value>
+					<value level="3">143</value>
+					<value level="4">145</value>
+					<value level="5">148</value>
+					<value level="6">151</value>
+					<value level="7">153</value>
+					<value level="8">156</value>
+					<value level="9">159</value>
+					<value level="10">162</value>
+					<value level="11">164</value>
+					<value level="12">167</value>
+					<value level="13">171</value>
+					<value level="14">176</value>
+					<value level="15">180</value>
+					<value level="16">186</value>
+					<value level="17">191</value>
+					<value level="18">197</value>
+					<value level="19">202</value>
+					<value level="20">207</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87705" toLevel="15" name="Bright Dance">
+		<!-- <font color="FED7A0">Light magic</font>. A sphere containing the power of light attacks the enemy. The sphere has different forms depending on attack range. Inflicts magic damage twice with 120 power. If the target is affected by <font color="00FF00">Twining Plants</font>, triggers <font color="77FF99">Mistilteinn</font>. <font color="77FF99">Mistilteinn</font>. Inflicts magic damage with 120 power. -->
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>15000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5800</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effectRange>1200</effectRange>
+		<reuseDelayGroup>87705</reuseDelayGroup>
+		<effects>
+			<effect name="TriggerSkillByDualRange">
+				<closeSkill>87706</closeSkill>
+				<rangeSkill>87707</rangeSkill>
+				<distance>200</distance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87706" toLevel="15" name="Bright Dance">
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>15000</reuseDelay>
+		<castRange>400</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>5800</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<attributeType>HOLY</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<isHidingMessages>true</isHidingMessages>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">143</value>
+					<value level="3">191</value>
+					<value level="4">228</value>
+					<value level="5">246</value>
+					<value level="6">255</value>
+					<value level="7">264</value>
+					<value level="8">273</value>
+					<value level="9">285</value>
+					<value level="10">300</value>
+					<value level="11">309</value>
+					<value level="12">318</value>
+					<value level="13">327</value>
+					<value level="14">336</value>
+					<value level="15">345</value>
+				</power>
+			</effect>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">143</value>
+					<value level="3">191</value>
+					<value level="4">228</value>
+					<value level="5">246</value>
+					<value level="6">255</value>
+					<value level="7">264</value>
+					<value level="8">273</value>
+					<value level="9">285</value>
+					<value level="10">300</value>
+					<value level="11">309</value>
+					<value level="12">318</value>
+					<value level="13">327</value>
+					<value level="14">336</value>
+					<value level="15">345</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87707" toLevel="15" name="Bright Dance">
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>15000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5800</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<attributeType>HOLY</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>800</affectRange>
+		<effectRange>1200</effectRange>
+		<fanRange>0;0;800;45</fanRange>
+		<isHidingMessages>true</isHidingMessages>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">143</value>
+					<value level="3">191</value>
+					<value level="4">228</value>
+					<value level="5">246</value>
+					<value level="6">255</value>
+					<value level="7">264</value>
+					<value level="8">273</value>
+					<value level="9">285</value>
+					<value level="10">300</value>
+					<value level="11">309</value>
+					<value level="12">318</value>
+					<value level="13">327</value>
+					<value level="14">336</value>
+					<value level="15">345</value>
+				</power>
+			</effect>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">143</value>
+					<value level="3">191</value>
+					<value level="4">228</value>
+					<value level="5">246</value>
+					<value level="6">255</value>
+					<value level="7">264</value>
+					<value level="8">273</value>
+					<value level="9">285</value>
+					<value level="10">300</value>
+					<value level="11">309</value>
+					<value level="12">318</value>
+					<value level="13">327</value>
+					<value level="14">336</value>
+					<value level="15">345</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87708" toLevel="15" name="Claidheamh Soluis">
+		<!-- <Skill with fixed cooldown>. <font color="FED7A0">Light magic</font>. Summons a shining sword that attacks the target and nearby enemies. Inflicts magic damage twice with 174 power. If the target is affected by <font color="00FF00">Twining Plants</font>, triggers <font color="77FF99">Mistilteinn</font>. <font color="77FF99">Mistilteinn</font>. Inflicts magic damage with 174 power. PvP: attacks up to 8 targets. PvE: attacks up to 8 targets. -->
+		<icon>icon.s_sp_claiomh_solais</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>30000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>6000</hitTime>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1560</value>
+			<value level="3">-1600</value>
+			<value level="4">-1680</value>
+			<value level="5">-1700</value>
+			<value level="6">-1720</value>
+			<value level="7">-1740</value>
+			<value level="8">-1760</value>
+			<value level="9">-1780</value>
+			<value level="10">-1800</value>
+			<value level="11">-1820</value>
+			<value level="12">-1840</value>
+			<value level="13">-1860</value>
+			<value level="14">-1880</value>
+			<value level="15">-1900</value>
+		</effectPoint>
+		<attributeType>HOLY</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">106</value>
+			<value level="2">108</value>
+			<value level="3">112</value>
+			<value level="4">117</value>
+			<value level="5">118</value>
+			<value level="6">119</value>
+			<value level="7">122</value>
+			<value level="8">123</value>
+			<value level="9">124</value>
+			<value level="10">125</value>
+			<value level="11">127</value>
+			<value level="12">128</value>
+			<value level="13">129</value>
+			<value level="14">130</value>
+			<value level="15">132</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-8</affectLimit>
+		<affectRange>250</affectRange>
+		<reuseDelayGroup>87708</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">174</value>
+					<value level="2">181</value>
+					<value level="3">188</value>
+					<value level="4">202</value>
+					<value level="5">205</value>
+					<value level="6">209</value>
+					<value level="7">212</value>
+					<value level="8">218</value>
+					<value level="9">224</value>
+					<value level="10">230</value>
+					<value level="11">236</value>
+					<value level="12">243</value>
+					<value level="13">250</value>
+					<value level="14">257</value>
+					<value level="15">264</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87709" toLevel="10" name="Florescence">
+		<!-- <font color="00FF00">Nature magic</font>. Inflicts magic damage with 120 power. <font color="00FF00">Plants</font> appear on the target. After 2 sec. <font color="00FF00">Plants</font> turn into <font color="00FF00">Twining Plants</font>. <font color="00FF00">Plants</font>. Resistance to All Weapons -30%. M. Def. -15%. <font color="00FF00">Twining Plants</font>. Resistance to All Weapons -60%. M. Def. -30%. Applies Hold with a certain chance. If a target held by <font color="00FF00">Twining Plants</font> is affected by <font color="FED7A0">light magic</font>,. <font color="00FF00">Twining Plants</font> disappear and the <font color="77FF99">Mistilteinn</font> effect is applied instead, dealing additional damage. <font color="77FF99">Mistilteinn</font>. Deals immense magic damage. For 2 sec., Resistance to All Weapons -60%, M. Def. -30%. -->
+		<icon>icon.s_sp_bloom</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>3500</hitTime>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1600</value>
+			<value level="3">-1680</value>
+			<value level="4">-1760</value>
+			<value level="5">-1800</value>
+			<value level="6">-1820</value>
+			<value level="7">-1840</value>
+			<value level="8">-1860</value>
+			<value level="9">-1880</value>
+			<value level="10">-1900</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">93</value>
+			<value level="2">97</value>
+			<value level="3">102</value>
+			<value level="4">107</value>
+			<value level="5">109</value>
+			<value level="6">110</value>
+			<value level="7">112</value>
+			<value level="8">113</value>
+			<value level="9">114</value>
+			<value level="10">115</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-8</affectLimit>
+		<affectRange>250</affectRange>
+		<reuseDelayGroup>87709</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">130</value>
+					<value level="3">135</value>
+					<value level="4">140</value>
+					<value level="5">150</value>
+					<value level="6">152</value>
+					<value level="7">154</value>
+					<value level="8">156</value>
+					<value level="9">158</value>
+					<value level="10">160</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87710" toLevel="2" name="Sephiroth">
+		<!-- <font color="FED7A0">Light magic</font>. Summons the power of light that attacks the target and nearby enemies. Inflicts magic damage 3 times with 450 power. If the target is affected by <font color="00FF00">Twining Plants</font>, triggers <font color="77FF99">Mistilteinn</font>. <font color="77FF99">Mistilteinn</font>. Inflicts magic damage with 450 power. PvP: attacks up to 16 targets. PvE: attacks up to 16 targets. <font color="77FF99">Special effect</font>. The <font color="FED7A0">Light Influence</font> effect is applied to the caster. <font color="FED7A0">Light Influence</font>. Duration: 10 sec. M. Skill Range +200, M. Skill Power +5%, Silence Atk. Rate +25%. When using magic skills, additionally attacks with <font color="FED7A0">Powerful Light</font>. If some attacks remain after the attack, duration is renewed. (Max number of attacks: 2) -->
+		<icon>
+			<value level="1">icon.s_sp_sephiroth</value>
+			<value level="2">icon.s_sp_sephiroth_master</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>180000</reuseDelay>
+		<castRange>900</castRange>
+		<hitTime>6000</hitTime>
+		<effectPoint>-1980</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">330</value>
+			<value level="2">430</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-8</affectLimit>
+		<affectRange>250</affectRange>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">450</value>
+					<value level="2">530</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87711" toLevel="20" name="Flaming Fire Sphere">
+		<!-- <font color="FF0000">Extreme Magic effect</font>. Increases Skill Power. Increases the number of attacks. <font color="FFFF00">Fire magic</font>. A sphere of raging flame attacks the enemy. Inflicts magic damage twice with <font color="FFFF00">36</font> power. -->
+		<icon>icon.s_sp_flame_orb</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>4500</hitTime>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">-200</value>
+			<value level="3">-400</value>
+			<value level="4">-580</value>
+			<value level="5">-660</value>
+			<value level="6">-720</value>
+			<value level="7">-740</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<mpConsume>
+			<value level="1">16</value>
+			<value level="2">22</value>
+			<value level="3">27</value>
+			<value level="4">31</value>
+			<value level="5">34</value>
+			<value level="6">37</value>
+			<value level="7">39</value>
+			<value level="8">41</value>
+			<value level="9">42</value>
+			<value level="10">44</value>
+			<value level="11">46</value>
+			<value level="12">48</value>
+			<value level="13">51</value>
+			<value level="14">53</value>
+			<value level="15">55</value>
+			<value level="16">57</value>
+			<value level="17">59</value>
+			<value level="18">61</value>
+			<value level="19">63</value>
+			<value level="20">65</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87701</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">36</value>
+					<value level="2">48</value>
+					<value level="3">96</value>
+					<value level="4">108</value>
+					<value level="5">126</value>
+					<value level="6">152</value>
+					<value level="7">168</value>
+					<value level="8">182</value>
+					<value level="9">189</value>
+					<value level="10">196</value>
+					<value level="11">204</value>
+					<value level="12">211</value>
+					<value level="13">218</value>
+					<value level="14">228</value>
+					<value level="15">240</value>
+					<value level="16">247</value>
+					<value level="17">254</value>
+					<value level="18">261</value>
+					<value level="19">268</value>
+					<value level="20">276</value>
+				</power>
+			</effect>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">36</value>
+					<value level="2">48</value>
+					<value level="3">96</value>
+					<value level="4">108</value>
+					<value level="5">126</value>
+					<value level="6">152</value>
+					<value level="7">168</value>
+					<value level="8">182</value>
+					<value level="9">189</value>
+					<value level="10">196</value>
+					<value level="11">204</value>
+					<value level="12">211</value>
+					<value level="13">218</value>
+					<value level="14">228</value>
+					<value level="15">240</value>
+					<value level="16">247</value>
+					<value level="17">254</value>
+					<value level="18">261</value>
+					<value level="19">268</value>
+					<value level="20">276</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87712" toLevel="20" name="Frosty Ice Sphere">
+		<!-- <font color="00AAFF">Extreme Magic effect</font>. Increases Skill Power. Increases the number of attacks. <font color="FFFF00">Ice magic</font>. A sphere of freezing cold attacks the enemy. Inflicts magic damage twice with <font color="FFFF00">36</font> power. -->
+		<icon>icon.s_sp_freezing_orb</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>4500</hitTime>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">-200</value>
+			<value level="3">-400</value>
+			<value level="4">-580</value>
+			<value level="5">-660</value>
+			<value level="6">-720</value>
+			<value level="7">-740</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">16</value>
+			<value level="2">22</value>
+			<value level="3">27</value>
+			<value level="4">31</value>
+			<value level="5">34</value>
+			<value level="6">37</value>
+			<value level="7">39</value>
+			<value level="8">41</value>
+			<value level="9">42</value>
+			<value level="10">44</value>
+			<value level="11">46</value>
+			<value level="12">48</value>
+			<value level="13">51</value>
+			<value level="14">53</value>
+			<value level="15">55</value>
+			<value level="16">57</value>
+			<value level="17">59</value>
+			<value level="18">61</value>
+			<value level="19">63</value>
+			<value level="20">65</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87702</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">36</value>
+					<value level="2">48</value>
+					<value level="3">96</value>
+					<value level="4">108</value>
+					<value level="5">126</value>
+					<value level="6">152</value>
+					<value level="7">168</value>
+					<value level="8">182</value>
+					<value level="9">189</value>
+					<value level="10">196</value>
+					<value level="11">204</value>
+					<value level="12">211</value>
+					<value level="13">218</value>
+					<value level="14">228</value>
+					<value level="15">240</value>
+					<value level="16">247</value>
+					<value level="17">254</value>
+					<value level="18">261</value>
+					<value level="19">268</value>
+					<value level="20">276</value>
+				</power>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87713" toLevel="20" name="Flaming Blazing Tempest">
+		<!-- <font color="FF0000">Extreme Magic effect</font>. Increases Skill Power. Increases attack range. <font color="FFFF00">Fire magic</font>. A blazing whirlwind attacks the target and nearby enemies. Inflicts magic damage with <font color="FFFF00">151</font> power. <font color="FF0000">Ice Vulnerability</font> and <font color="FF0000">Blazing Whirlwind</font> are applied to the target. <font color="FF0000">Ice Vulnerability</font>. Decreases resistance to <font color="FF0000">ice magic</font>. If <font color="00AAFF">Fire Vulnerability</font> is applied to the target,. removes <font color="00AAFF">Fire Vulnerability</font>. <font color="00AAFF">Blazing Whirlwind</font>. If <font color="00AAFF">Icy Wind</font> is applied to the target, removes. <font color="77FF99">Icy Wind</font> and then triggers <font color="00AAFF">Circle Explosion</font>. <font color="77FF99">Circle Explosion</font>. Inflicts magic damage with 151 power. M. Def. -30%. PvP: attacks up to 8 targets. PvE: attacks up to 8 targets. -->
+		<icon>icon.s_sp_blazing_tempest</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<affectLimit>3-8</affectLimit>
+		<affectRange>250</affectRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5000</hitTime>
+		<effectRange>800</effectRange>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1540</value>
+			<value level="3">-1560</value>
+			<value level="4">-1580</value>
+			<value level="5">-1600</value>
+			<value level="6">-1620</value>
+			<value level="7">-1640</value>
+			<value level="8">-1660</value>
+			<value level="9">-1680</value>
+			<value level="10">-1700</value>
+			<value level="11">-1720</value>
+			<value level="12">-1740</value>
+			<value level="13">-1760</value>
+			<value level="14">-1780</value>
+			<value level="15">-1800</value>
+			<value level="16">-1820</value>
+			<value level="17">-1840</value>
+			<value level="18">-1860</value>
+			<value level="19">-1880</value>
+			<value level="20">-1900</value>
+		</effectPoint>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">93</value>
+			<value level="2">94</value>
+			<value level="3">95</value>
+			<value level="4">96</value>
+			<value level="5">97</value>
+			<value level="6">98</value>
+			<value level="7">99</value>
+			<value level="8">100</value>
+			<value level="9">102</value>
+			<value level="10">103</value>
+			<value level="11">104</value>
+			<value level="12">105</value>
+			<value level="13">107</value>
+			<value level="14">108</value>
+			<value level="15">109</value>
+			<value level="16">110</value>
+			<value level="17">112</value>
+			<value level="18">113</value>
+			<value level="19">114</value>
+			<value level="20">115</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<reuseDelayGroup>87703</reuseDelayGroup>
+		<effects>
+			<!--
+			<effect name="CallSkill">
+				<skillId>87723</skillId>  Blazing Whirlwind 
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>87725</skillId> Ice Vulnerabilit
+				<skillLevel>1</skillLevel>
+			</effect>y 
+			-->
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">151</value>
+					<value level="2">154</value>
+					<value level="3">157</value>
+					<value level="4">160</value>
+					<value level="5">163</value>
+					<value level="6">166</value>
+					<value level="7">169</value>
+					<value level="8">172</value>
+					<value level="9">175</value>
+					<value level="10">178</value>
+					<value level="11">181</value>
+					<value level="12">184</value>
+					<value level="13">189</value>
+					<value level="14">194</value>
+					<value level="15">198</value>
+					<value level="16">204</value>
+					<value level="17">210</value>
+					<value level="18">216</value>
+					<value level="19">222</value>
+					<value level="20">228</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87714" toLevel="20" name="Frosty Glacier Strike">
+		<!-- <font color="FF0000">Extreme Magic effect</font>. Increases Skill Power. Increases attack range. <font color="FFFF00">Ice magic</font>. A frosty glacier attacks the target and nearby enemies. Inflicts magic damage with <font color="FFFF00">151</font> power. <font color="00AAFF">Fire Vulnerability</font> and <font color="00AAFF">Icy Wind</font> are applied to the target. <font color="00AAFF">Ice Vulnerability</font>. Decreases resistance to <font color="00AAFF">fire magic</font>. If <font color="FF0000">Ice Vulnerability</font> is applied to the target,. removes <font color="FF0000">Ice Vulnerability</font>. <font color="FF0000">Icy Wind</font>. If <font color="FF0000">Blazing Whirlwind</font> is applied to the target, removes. <font color="77FF99">Blazing Whirlwind</font> and then triggers <font color="FF0000">Circle Explosion</font>. <font color="77FF99">Circle Explosion</font>. Inflicts magic damage with 151 power. M. Def. -30%. PvP: attacks up to 8 targets. PvE: attacks up to 8 targets. -->
+		<icon>icon.s_sp_glacial_strike</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<affectLimit>3-8</affectLimit>
+		<affectRange>250</affectRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5000</hitTime>
+		<effectRange>800</effectRange>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1540</value>
+			<value level="3">-1560</value>
+			<value level="4">-1580</value>
+			<value level="5">-1600</value>
+			<value level="6">-1620</value>
+			<value level="7">-1640</value>
+			<value level="8">-1660</value>
+			<value level="9">-1680</value>
+			<value level="10">-1700</value>
+			<value level="11">-1720</value>
+			<value level="12">-1740</value>
+			<value level="13">-1760</value>
+			<value level="14">-1780</value>
+			<value level="15">-1800</value>
+			<value level="16">-1820</value>
+			<value level="17">-1840</value>
+			<value level="18">-1860</value>
+			<value level="19">-1880</value>
+			<value level="20">-1900</value>
+		</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">93</value>
+			<value level="2">94</value>
+			<value level="3">95</value>
+			<value level="4">96</value>
+			<value level="5">97</value>
+			<value level="6">98</value>
+			<value level="7">99</value>
+			<value level="8">100</value>
+			<value level="9">102</value>
+			<value level="10">103</value>
+			<value level="11">104</value>
+			<value level="12">105</value>
+			<value level="13">107</value>
+			<value level="14">108</value>
+			<value level="15">109</value>
+			<value level="16">110</value>
+			<value level="17">112</value>
+			<value level="18">113</value>
+			<value level="19">114</value>
+			<value level="20">115</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<reuseDelayGroup>87704</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">151</value>
+					<value level="2">154</value>
+					<value level="3">157</value>
+					<value level="4">160</value>
+					<value level="5">163</value>
+					<value level="6">166</value>
+					<value level="7">169</value>
+					<value level="8">172</value>
+					<value level="9">175</value>
+					<value level="10">178</value>
+					<value level="11">181</value>
+					<value level="12">184</value>
+					<value level="13">189</value>
+					<value level="14">194</value>
+					<value level="15">198</value>
+					<value level="16">204</value>
+					<value level="17">210</value>
+					<value level="18">216</value>
+					<value level="19">222</value>
+					<value level="20">228</value>
+				</power>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87715" toLevel="15" name="Bright Dance of Light">
+		<!-- <font color="FED7A0">Light Mastery effect</font>. Increases the number of attacks. Decreases casting time. <font color="FFFF00">Light magic</font>. A sphere containing the power of light attacks the enemy. The sphere has different forms depending on attack range. Inflicts magic damage 3 times with 120 power. If the target is affected by <font color="00FF00">Twining Plants</font>, triggers <font color="77FF99">Mistilteinn</font>. <font color="77FF99">Mistilteinn</font>. Inflicts magic damage with 120 power. -->
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>15000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5500</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87705</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">143</value>
+					<value level="3">191</value>
+					<value level="4">228</value>
+					<value level="5">246</value>
+					<value level="6">255</value>
+					<value level="7">264</value>
+					<value level="8">273</value>
+					<value level="9">285</value>
+					<value level="10">300</value>
+					<value level="11">309</value>
+					<value level="12">318</value>
+					<value level="13">327</value>
+					<value level="14">336</value>
+					<value level="15">345</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87716" toLevel="15" name="Bright Dance of Light">
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>15000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5500</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87705</reuseDelayGroup>
+	</skill>
+	<skill id="87717" toLevel="15" name="Bright Dance of Light">
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A3</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>15000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5500</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-12</affectLimit>
+		<fanRange>0;0;400;90</fanRange>
+		<reuseDelayGroup>87705</reuseDelayGroup>
+	</skill>
+	<skill id="87718" toLevel="15" name="Shining Claidheamh Soluis">
+		<!-- <font color="FED7A0">Light Mastery effect</font>. Increases power. Increases the number of targets. Decreases casting time. <Skill with fixed cooldown>. <font color="FED7A0">Light magic</font>. Summons a shining sword that attacks the target and nearby enemies. Inflicts magic damage twice with 191 power. If the target is affected by <font color="00FF00">Twining Plants</font>, triggers <font color="77FF99">Mistilteinn</font>. <font color="77FF99">Mistilteinn</font>. Inflicts magic damage with 191 power. PvP: Attacks up to 12 targets. PvE: Attacks up to 12 targets. -->
+		<icon>icon.s_sp_claiomh_solais</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>30000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5500</hitTime>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1560</value>
+			<value level="3">-1600</value>
+			<value level="4">-1680</value>
+			<value level="5">-1700</value>
+			<value level="6">-1720</value>
+			<value level="7">-1740</value>
+			<value level="8">-1760</value>
+			<value level="9">-1780</value>
+			<value level="10">-1800</value>
+			<value level="11">-1820</value>
+			<value level="12">-1840</value>
+			<value level="13">-1860</value>
+			<value level="14">-1880</value>
+			<value level="15">-1900</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<mpConsume>
+			<value level="1">106</value>
+			<value level="2">108</value>
+			<value level="3">112</value>
+			<value level="4">117</value>
+			<value level="5">118</value>
+			<value level="6">119</value>
+			<value level="7">122</value>
+			<value level="8">123</value>
+			<value level="9">124</value>
+			<value level="10">125</value>
+			<value level="11">127</value>
+			<value level="12">128</value>
+			<value level="13">129</value>
+			<value level="14">130</value>
+			<value level="15">132</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-8</affectLimit>
+		<affectRange>250</affectRange>
+		<reuseDelayGroup>87708</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">191</value>
+					<value level="2">199</value>
+					<value level="3">206</value>
+					<value level="4">222</value>
+					<value level="5">225</value>
+					<value level="6">229</value>
+					<value level="7">233</value>
+					<value level="8">239</value>
+					<value level="9">246</value>
+					<value level="10">253</value>
+					<value level="11">259</value>
+					<value level="12">267</value>
+					<value level="13">275</value>
+					<value level="14">282</value>
+					<value level="15">290</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87719" toLevel="10" name="Full Florescence">
+		<!-- <font color="FFFF00">One With Nature effect</font>. Twining Plants is triggered immediately after using the skill. <font color="FFFF00">Nature magic</font>. Inflicts magic damage with 120 power. <font color="00FF00">Twining Plants</font> appear on the target. <font color="00FF00">Twining Plants</font>. Resistance to All Weapons -60%. M. Def. -30%. Applies Hold with a certain chance. If a target held by <font color="00FF00">Twining Plants</font> is affected by <font color="FED7A0">light magic</font>,. <font color="00FF00">Twining Plants</font> disappear and the <font color="77FF99">Mistilteinn</font> effect is applied instead, dealing additional damage. <font color="77FF99">Mistilteinn</font>. Deals immense magic damage. For 2 sec., Resistance to All Weapons -60%, M. Def. -30%. -->
+		<icon>icon.s_sp_bloom</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>3500</hitTime>
+		<effectPoint>
+			<value level="1">-1520</value>
+			<value level="2">-1600</value>
+			<value level="3">-1680</value>
+			<value level="4">-1760</value>
+			<value level="5">-1800</value>
+			<value level="6">-1820</value>
+			<value level="7">-1840</value>
+			<value level="8">-1860</value>
+			<value level="9">-1880</value>
+			<value level="10">-1900</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>200</attributeValue>
+		<mpConsume>
+			<value level="1">93</value>
+			<value level="2">97</value>
+			<value level="3">102</value>
+			<value level="4">107</value>
+			<value level="5">109</value>
+			<value level="6">110</value>
+			<value level="7">112</value>
+			<value level="8">113</value>
+			<value level="9">114</value>
+			<value level="10">115</value>
+		</mpConsume>
+		
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-8</affectLimit>
+		<affectRange>250</affectRange>
+		<reuseDelayGroup>87709</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">130</value>
+					<value level="3">135</value>
+					<value level="4">140</value>
+					<value level="5">150</value>
+					<value level="6">152</value>
+					<value level="7">154</value>
+					<value level="8">156</value>
+					<value level="9">158</value>
+					<value level="10">160</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87721" toLevel="2" name="Heat">
+		<!-- The state of burning. When receiving damage from <font color="00AAFF">Ice Sphere</font> Lv. 3 or higher. <font color="77FF99">Incompatibility</font> triggers. -->
+		<icon>icon.s_sp_flame_orb_stigma</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>5</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87722" toLevel="2" name="Coldness">
+		<!-- The state of freezing. When receiving damage from <font color="FF0000">Fire Sphere</font> Lv. 3 or higher. <font color="77FF99">Incompatibility</font> triggers. -->
+		<icon>icon.s_sp_freezing_orb_stigma</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>5</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87723" toLevel="2" name="Blazing Whirlwind">
+		<!-- A strong fire whirlwind springs up. When receiving damage from <font color="00AAFF">Glacier Strike</font>. <font color="77FF99">Circle Explosion</font> triggers. -->
+		<icon>icon.s_sp_blazing_tempest_stigma</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>5</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<!-- <abnormalType></abnormalType> 
+		<abnormalLevel></abnormalLevel>-->
+		<abnormalTime>10</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87724" toLevel="2" name="Icy Wind">
+		<!-- A strong freezing wind blows. When receiving damage from <font color="00AAFF">Blazing Tempest</font>. <font color="77FF99">Circle Explosion</font> triggers. -->
+		<icon>icon.s_sp_glacial_strike_stigma</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>5</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87725" toLevel="1" name="Ice Vulnerability">
+		<!-- Decreases <font color="00AAFF">Ice Resistance</font>. -->
+		<icon>icon.s_sp_ice_weakness</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<!-- <abnormalType></abnormalType> 
+		<abnormalLevel></abnormalLevel>-->
+		<abnormalTime>10</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<isTriggeredSkill>true</isTriggeredSkill>
+	</skill>
+	<skill id="87726" toLevel="1" name="Fire Vulnerability">
+		<!-- Decreases <font color="FF0000">Fire Resistance</font>. -->
+		<icon>icon.s_sp_flame_weakness</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<!-- <abnormalType></abnormalType> 
+		<abnormalLevel></abnormalLevel>-->
+		<abnormalTime>10</abnormalTime>
+	</skill>
+	<skill id="87727" toLevel="3" name="Plants">
+		<!-- Resistance to All Weapons -30%. M. Def. -15% -->
+		<icon>icon.s_sp_bloom_debuff</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>4</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-15</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87731" toLevel="20" name="Incompatibility">
+		<!-- When Heat and Coldness collide, explosion occurs. M. Def. -23% -->
+		<icon>icon.s_sp_conflict_explosion</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-200</value>
+			<value level="2">-300</value>
+			<value level="3">-400</value>
+			<value level="4">-500</value>
+			<value level="5">-600</value>
+			<value level="6">-680</value>
+			<value level="7">-720</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-23</value>
+					<value level="2">-23</value>
+					<value level="3">-23</value>
+					<value level="4">-23</value>
+					<value level="5">-23</value>
+					<value level="6">-23</value>
+					<value level="7">-23</value>
+					<value level="8">-23</value>
+					<value level="9">-23</value>
+					<value level="10">-23</value>
+					<value level="11">-23</value>
+					<value level="12">-23</value>
+					<value level="13">-23</value>
+					<value level="14">-23</value>
+					<value level="15">-23</value>
+					<value level="16">-23</value>
+					<value level="17">-23</value>
+					<value level="18">-23</value>
+					<value level="19">-23</value>
+					<value level="20">-23</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87732" toLevel="20" name="Circle Explosion">
+		<!-- When Blazing Whirlwind and Icy Wind collide, explosion occurs. M. Def. -23% -->
+		<icon>icon.s_sp_circle_explosion</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-760</value>
+			<value level="2">-770</value>
+			<value level="3">-780</value>
+			<value level="4">-790</value>
+			<value level="5">-800</value>
+			<value level="6">-810</value>
+			<value level="7">-820</value>
+			<value level="8">-830</value>
+			<value level="9">-840</value>
+			<value level="10">-850</value>
+			<value level="11">-860</value>
+			<value level="12">-870</value>
+			<value level="13">-880</value>
+			<value level="14">-890</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-23</value>
+					<value level="2">-23</value>
+					<value level="3">-23</value>
+					<value level="4">-23</value>
+					<value level="5">-23</value>
+					<value level="6">-23</value>
+					<value level="7">-23</value>
+					<value level="8">-23</value>
+					<value level="9">-23</value>
+					<value level="10">-23</value>
+					<value level="11">-23</value>
+					<value level="12">-23</value>
+					<value level="13">-23</value>
+					<value level="14">-23</value>
+					<value level="15">-23</value>
+					<value level="16">-23</value>
+					<value level="17">-23</value>
+					<value level="18">-23</value>
+					<value level="19">-23</value>
+					<value level="20">-23</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87733" toLevel="15" name="Mistilteinn">
+		<!-- Resistance to All Weapons -60%. M. Def. -30% -->
+		<icon>icon.s_sp_misteltein</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87734" toLevel="60" name="Mistilteinn">
+		<!-- Resistance to All Weapons -60%. M. Def. -30% -->
+		<icon>icon.s_sp_misteltein</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-760</value>
+			<value level="2">-780</value>
+			<value level="3">-800</value>
+			<value level="4">-840</value>
+			<value level="5">-850</value>
+			<value level="6">-860</value>
+			<value level="7">-870</value>
+			<value level="8">-880</value>
+			<value level="9">-890</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+			<value level="16">-760</value>
+			<value level="17">-780</value>
+			<value level="18">-800</value>
+			<value level="19">-840</value>
+			<value level="20">-850</value>
+			<value level="21">-860</value>
+			<value level="22">-870</value>
+			<value level="23">-880</value>
+			<value level="24">-890</value>
+			<value level="25">-900</value>
+			<value level="26">-910</value>
+			<value level="27">-920</value>
+			<value level="28">-930</value>
+			<value level="29">-940</value>
+			<value level="30">-950</value>
+			<value level="31">-760</value>
+			<value level="32">-780</value>
+			<value level="33">-800</value>
+			<value level="34">-840</value>
+			<value level="35">-850</value>
+			<value level="36">-860</value>
+			<value level="37">-870</value>
+			<value level="38">-880</value>
+			<value level="39">-890</value>
+			<value level="40">-900</value>
+			<value level="41">-910</value>
+			<value level="42">-920</value>
+			<value level="43">-930</value>
+			<value level="44">-940</value>
+			<value level="45">-950</value>
+			<value level="46">-760</value>
+			<value level="47">-780</value>
+			<value level="48">-800</value>
+			<value level="49">-840</value>
+			<value level="50">-850</value>
+			<value level="51">-860</value>
+			<value level="52">-870</value>
+			<value level="53">-880</value>
+			<value level="54">-890</value>
+			<value level="55">-900</value>
+			<value level="56">-910</value>
+			<value level="57">-920</value>
+			<value level="58">-930</value>
+			<value level="59">-940</value>
+			<value level="60">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+					<value level="21">-30</value>
+					<value level="22">-30</value>
+					<value level="23">-30</value>
+					<value level="24">-30</value>
+					<value level="25">-30</value>
+					<value level="26">-30</value>
+					<value level="27">-30</value>
+					<value level="28">-30</value>
+					<value level="29">-30</value>
+					<value level="30">-30</value>
+					<value level="31">-30</value>
+					<value level="32">-30</value>
+					<value level="33">-30</value>
+					<value level="34">-30</value>
+					<value level="35">-30</value>
+					<value level="36">-30</value>
+					<value level="37">-30</value>
+					<value level="38">-30</value>
+					<value level="39">-30</value>
+					<value level="40">-30</value>
+					<value level="41">-30</value>
+					<value level="42">-30</value>
+					<value level="43">-30</value>
+					<value level="44">-30</value>
+					<value level="45">-30</value>
+					<value level="46">-30</value>
+					<value level="47">-30</value>
+					<value level="48">-30</value>
+					<value level="49">-30</value>
+					<value level="50">-30</value>
+					<value level="51">-30</value>
+					<value level="52">-30</value>
+					<value level="53">-30</value>
+					<value level="54">-30</value>
+					<value level="55">-30</value>
+					<value level="56">-30</value>
+					<value level="57">-30</value>
+					<value level="58">-30</value>
+					<value level="59">-30</value>
+					<value level="60">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87735" toLevel="1" name="Mistilteinn">
+		<!-- Resistance to All Weapons -60%. M. Def. -30% -->
+		<icon>icon.s_sp_misteltein</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-990</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87736" toLevel="15" name="Silence of Light">
+		<!-- You cannot use skills. -->
+		<icon>icon.s_sp_claiomh_solais</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-900</effectPoint>
+		<abnormalTime>5</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87741" toLevel="20" name="Incompatibility">
+		<!-- When Heat and Coldness collide, explosion occurs. M. Def. -30% -->
+		<icon>icon.s_sp_conflict_explosion</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-200</value>
+			<value level="2">-300</value>
+			<value level="3">-400</value>
+			<value level="4">-500</value>
+			<value level="5">-600</value>
+			<value level="6">-680</value>
+			<value level="7">-720</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87742" toLevel="20" name="Circle Explosion">
+		<!-- When Blazing Whirlwind and Icy Wind collide, explosion occurs. M. Def. -30% -->
+		<icon>icon.s_sp_circle_explosion</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-760</value>
+			<value level="2">-770</value>
+			<value level="3">-780</value>
+			<value level="4">-790</value>
+			<value level="5">-800</value>
+			<value level="6">-810</value>
+			<value level="7">-820</value>
+			<value level="8">-830</value>
+			<value level="9">-840</value>
+			<value level="10">-850</value>
+			<value level="11">-860</value>
+			<value level="12">-870</value>
+			<value level="13">-880</value>
+			<value level="14">-890</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87743" toLevel="15" name="Mistilteinn">
+		<!-- Resistance to All Weapons -60%. M. Def. -30% -->
+		<icon>icon.s_sp_misteltein</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87744" toLevel="60" name="Mistilteinn">
+		<!-- Resistance to All Weapons -60%. M. Def. -30% -->
+		<icon>icon.s_sp_misteltein</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>
+			<value level="1">-760</value>
+			<value level="2">-780</value>
+			<value level="3">-800</value>
+			<value level="4">-840</value>
+			<value level="5">-850</value>
+			<value level="6">-860</value>
+			<value level="7">-870</value>
+			<value level="8">-880</value>
+			<value level="9">-890</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+			<value level="16">-760</value>
+			<value level="17">-780</value>
+			<value level="18">-800</value>
+			<value level="19">-840</value>
+			<value level="20">-850</value>
+			<value level="21">-860</value>
+			<value level="22">-870</value>
+			<value level="23">-880</value>
+			<value level="24">-890</value>
+			<value level="25">-900</value>
+			<value level="26">-910</value>
+			<value level="27">-920</value>
+			<value level="28">-930</value>
+			<value level="29">-940</value>
+			<value level="30">-950</value>
+			<value level="31">-760</value>
+			<value level="32">-780</value>
+			<value level="33">-800</value>
+			<value level="34">-840</value>
+			<value level="35">-850</value>
+			<value level="36">-860</value>
+			<value level="37">-870</value>
+			<value level="38">-880</value>
+			<value level="39">-890</value>
+			<value level="40">-900</value>
+			<value level="41">-910</value>
+			<value level="42">-920</value>
+			<value level="43">-930</value>
+			<value level="44">-940</value>
+			<value level="45">-950</value>
+			<value level="46">-760</value>
+			<value level="47">-780</value>
+			<value level="48">-800</value>
+			<value level="49">-840</value>
+			<value level="50">-850</value>
+			<value level="51">-860</value>
+			<value level="52">-870</value>
+			<value level="53">-880</value>
+			<value level="54">-890</value>
+			<value level="55">-900</value>
+			<value level="56">-910</value>
+			<value level="57">-920</value>
+			<value level="58">-930</value>
+			<value level="59">-940</value>
+			<value level="60">-950</value>
+		</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-30</value>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+					<value level="21">-30</value>
+					<value level="22">-30</value>
+					<value level="23">-30</value>
+					<value level="24">-30</value>
+					<value level="25">-30</value>
+					<value level="26">-30</value>
+					<value level="27">-30</value>
+					<value level="28">-30</value>
+					<value level="29">-30</value>
+					<value level="30">-30</value>
+					<value level="31">-30</value>
+					<value level="32">-30</value>
+					<value level="33">-30</value>
+					<value level="34">-30</value>
+					<value level="35">-30</value>
+					<value level="36">-30</value>
+					<value level="37">-30</value>
+					<value level="38">-30</value>
+					<value level="39">-30</value>
+					<value level="40">-30</value>
+					<value level="41">-30</value>
+					<value level="42">-30</value>
+					<value level="43">-30</value>
+					<value level="44">-30</value>
+					<value level="45">-30</value>
+					<value level="46">-30</value>
+					<value level="47">-30</value>
+					<value level="48">-30</value>
+					<value level="49">-30</value>
+					<value level="50">-30</value>
+					<value level="51">-30</value>
+					<value level="52">-30</value>
+					<value level="53">-30</value>
+					<value level="54">-30</value>
+					<value level="55">-30</value>
+					<value level="56">-30</value>
+					<value level="57">-30</value>
+					<value level="58">-30</value>
+					<value level="59">-30</value>
+					<value level="60">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87745" toLevel="1" name="Mistilteinn">
+		<!-- Resistance to All Weapons -60%. M. Def. -30% -->
+		<icon>icon.s_sp_misteltein</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-990</effectPoint>
+		<abnormalTime>3</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87746" toLevel="1" name="Powerful Light">
+		<icon>icon.s_sp_light_authority_attack</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>500</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-990</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87747" toLevel="1" name="Powerful Light">
+		<icon>icon.s_sp_light_authority_attack</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>500</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-990</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87748" toLevel="1" name="Powerful Light">
+		<icon>icon.s_sp_light_authority_attack</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>500</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-990</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87749" toLevel="1" name="Powerful Light">
+		<icon>icon.s_sp_light_authority_attack</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>500</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-990</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87750" toLevel="1" name="Cancel Light Influence">
+		<!-- Means of cancelling Light Influence. -->
+		<icon>icon.s_sp_light_authority</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>200</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87751" toLevel="1" name="Nature Spirit">
+		<!-- <font color="00FF00">Nature magic</font>. Bestows the protection of the nature. HP Recovery Rate +10. MP Recovery Rate +5. Debuff/ anomaly duration -10%. When using <font color="FED7A0">light magic</font>, with 30% chance. applies the <font color="77FF99">Brilliant Light</font> effect. Buff duration: 8 sec. Cooldown: 30 sec. <font color="77FF99">Brilliant Light</font>. M. Atk. +10%. M. Skill Critical Damage +3%. M. Skill Power +5%. Casting Spd. +100. Speed +5. Debuff/ Anomaly Resistance +100. Recovers +101 HP and +102 MP every 2 sec. -->
+		<icon>icon.s_sp_natural_spirit</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<coolTime>500</coolTime>
+		<castRange>-1</castRange>
+		<hitTime>5500</hitTime>
+		<abnormalTime>1200</abnormalTime>
+		<mpConsume>150</mpConsume>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>NATURES_BLESSING</abnormalType>
+		<abnormalLevel>1</abnormalLevel>
+		<reuseDelayGroup>87751</reuseDelayGroup>
+		<effects>
+			<effect name="TriggerSkillByMagicType">
+				<magicTypes>1</magicTypes>
+				<skillId>87752</skillId> <!-- Brilliant Light -->
+				<skillLevel>1</skillLevel>
+				<minDamage>1</minDamage>
+				<chance>30</chance>
+				<targetType>SELF</targetType>
+				<attackerType>Creature</attackerType>
+			</effect>
+			<effect name="HpRegen">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<!-- TODO: Decreases debuff/ anomaly duration. -->
+		</effects>
+	</skill>
+	<skill id="87752" toLevel="1" name="Brilliant Light">
+		<!-- Grants the great power of light. M. Atk. +10%. M. Skill Critical Damage +3%. M. Skill Power +5%. Casting Spd. +100. Speed +5. Debuff/ Anomaly Resistance +10%. Recovers 500 HP every 2 sec. Recovers 50 MP every 2 sec. -->
+		<icon>icon.s_sp_brillant_light</icon>
+		<operateType>A2</operateType>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>30000</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<abnormalType>BRILLIANT_LIGHT</abnormalType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>8</abnormalTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87752</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalAttack">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="HealOverTime">
+				<power>500</power>
+				<ticks>2</ticks>
+			</effect>
+			<effect name="ManaHealOverTime">
+				<power>50</power>
+				<ticks>2</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87753" toLevel="2" name="Light Influence">
+		<!-- M. Skill Range +200. M. Skill Power +5%. Silence Atk. Rate +25%. When using magic skills, additionally attacks with <font color="FED7A0">Powerful Light</font>. - Inflicts magic damage twice with 450 power. Available attacks: 2 times. If some attacks remain after the attack, duration is renewed. -->
+		<icon>icon.s_sp_light_authority</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>1000</hitTime>
+		<effectPoint>990</effectPoint>
+		<abnormalTime>10</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87754" toLevel="3" name="Light Influence">
+		<!-- M. Skill Range +200. M. Skill Power +10%. Silence Atk. Rate +50%. When using magic skills, additionally attacks with <font color="FED7A0">Powerful Light</font>. - Inflicts magic damage twice with 530 power. Available attacks: 3 tmes. If some attacks remain after the attack, duration is renewed. -->
+		<icon>icon.s_sp_light_authority</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>1000</hitTime>
+		<effectPoint>990</effectPoint>
+		<abnormalTime>10</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87755" toLevel="1" name="Light Influence">
+		<!-- When using attack skills, additionally attacks with <font color="FED7A0">Powerful Light</font>. P. skills:. - Inflicts damage twice with 500% power. M. skills:. - Inflicts magic damage twice with 400 power. Available attacks: 1 time -->
+		<icon>icon.s_sp_light_authority</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>1000</hitTime>
+		<effectPoint>990</effectPoint>
+		<abnormalTime>10</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87756" toLevel="1" name="Light Influence">
+		<icon>icon.s_sp_light_authority</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>990</effectPoint>
+		<abnormalTime>10</abnormalTime>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87757" toLevel="1" name="Mother Tree's Blessing">
+		<!-- The power of the Mother Tree fills the body. For a certain amount of time, recivers HP/ MP. Speed +10 -->
+		<icon>icon.s_sp_bless_of_world_tree</icon>
+		<operateType>A1</operateType>
+		<isMagic>5</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>990</effectPoint>
+		<abnormalTime>10</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<effects>
+			<effect name="Speed">
+				<amount>
+					<value level="1">10</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87760" toLevel="1" name="Forest Root">
+		<!-- Unable to move. -->
+		<icon>icon.skill10792</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-300</effectPoint>
+		<abnormalTime>4</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87761" toLevel="1" name="Nature's Blessing">
+		<!-- <font color="FFFF00">One With Nature effect</font>. Increases HP Recovery Rate. Increases MP Recovery Rate. Decreases debuff/ anomaly duration. <font color="FED7A0">Light magic</font> skills enhance the applied buff. <font color="00FF00">Nature magic</font>. Bestows the protection of the nature. HP Recovery Rate <font color="FFFF00">+20</font>. MP Recovery Rate <font color="FFFF00">+10</font>. Debuff/ anomaly duration <font color="FFFF00">-50%</font>. When using <font color="FED7A0">light magic</font>, with 100% chance. applies the <font color="77FF99">Brilliant Blessing</font> effect. Buff duration: 15 sec. Cooldown: 30 sec. <font color="77FF99">Brilliant Blessing</font>. M. Atk. +25%. M. Skill Critical Damage +8%. M. Skill Power +15%. Casting Spd. +300. Speed +15. Debuff/ Anomaly Resistance +200. Recovers +201 HP and +202 MP every 2 sec. -->
+		<icon>icon.s_sp_natural_spirit</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>10000</reuseDelay>
+		<coolTime>500</coolTime>
+		<castRange>-1</castRange>
+		<hitTime>5500</hitTime>
+		<abnormalTime>1200</abnormalTime>
+		<mpConsume>150</mpConsume>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>NATURES_BLESSING</abnormalType>
+		<abnormalLevel>2</abnormalLevel>
+		<reuseDelayGroup>87751</reuseDelayGroup>
+		<effects>
+			<effect name="TriggerSkillByMagicType">
+				<magicTypes>1</magicTypes>
+				<skillId>87762</skillId> <!-- Brilliant Blessing -->
+				<skillLevel>1</skillLevel>
+				<minDamage>1</minDamage>
+				<chance>30</chance>
+				<targetType>SELF</targetType>
+				<attackerType>Creature</attackerType>
+			</effect>
+			<effect name="HpRegen">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<!-- TODO: Decreases debuff/ anomaly duration. -->
+		</effects>
+	</skill>
+	<skill id="87762" toLevel="1" name="Brilliant Blessing">
+		<!-- The Mother Tree bestows the stream of powerful light. M. Atk. +25%. M. Skill Critical Damage +8%. M. Skill Power +15%. Casting Spd. +300. Speed +15. Debuff/ Anomaly Resistance +40%. Recovers 3000 HP every 2 sec. Recovers 100 MP every 2 sec. -->
+		<icon>icon.s_sp_brillant_light</icon>
+		<operateType>A2</operateType>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>30000</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<abnormalType>BRILLIANT_LIGHT</abnormalType>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>8</abnormalTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayGroup>87752</reuseDelayGroup>
+		<effects>
+			<effect name="MagicalAttack">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-40</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="HealOverTime">
+				<power>3000</power>
+				<ticks>2</ticks>
+			</effect>
+			<effect name="ManaHealOverTime">
+				<power>100</power>
+				<ticks>2</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87771" toLevel="1" name="Summon Mother Tree">
+		<!-- Summons the Mother Tree. -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87772" toLevel="1" name="Presentation effect">
+		<icon>icon.s_st_sacred_guardian</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87776" toLevel="20" name="Transcendent Fire Sphere">
+		<!-- <font color="FF0000">Fire magic</font>. A sphere of raging flame attacks the enemy. Inflicts magic damage twice with <font color="FFFF00">36</font> power. The skill can only be used in transcendent instance zones. -->
+		<icon>icon.s_sp_flame_orb</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>4500</hitTime>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">-200</value>
+			<value level="3">-400</value>
+			<value level="4">-580</value>
+			<value level="5">-660</value>
+			<value level="6">-720</value>
+			<value level="7">-740</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<mpConsume>
+			<value level="1">16</value>
+			<value level="2">22</value>
+			<value level="3">27</value>
+			<value level="4">31</value>
+			<value level="5">34</value>
+			<value level="6">37</value>
+			<value level="7">39</value>
+			<value level="8">41</value>
+			<value level="9">42</value>
+			<value level="10">44</value>
+			<value level="11">46</value>
+			<value level="12">48</value>
+			<value level="13">51</value>
+			<value level="14">53</value>
+			<value level="15">55</value>
+			<value level="16">57</value>
+			<value level="17">59</value>
+			<value level="18">61</value>
+			<value level="19">63</value>
+			<value level="20">65</value>
+		</mpConsume>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">36</value>
+					<value level="2">48</value>
+					<value level="3">96</value>
+					<value level="4">108</value>
+					<value level="5">126</value>
+					<value level="6">152</value>
+					<value level="7">168</value>
+					<value level="8">182</value>
+					<value level="9">189</value>
+					<value level="10">196</value>
+					<value level="11">204</value>
+					<value level="12">211</value>
+					<value level="13">218</value>
+					<value level="14">228</value>
+					<value level="15">240</value>
+					<value level="16">247</value>
+					<value level="17">254</value>
+					<value level="18">261</value>
+					<value level="19">268</value>
+					<value level="20">276</value>
+				</power>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87777" toLevel="20" name="Transcendent Ice Sphere">
+		<!-- <font color="00AAFF">Ice magic</font>. A sphere of freezing cold attacks the enemy. Inflicts magic damage twice with 36 power. The skill can only be used in transcendent instance zones. -->
+		<icon>icon.s_sp_freezing_orb</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>4500</hitTime>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">-200</value>
+			<value level="3">-400</value>
+			<value level="4">-580</value>
+			<value level="5">-660</value>
+			<value level="6">-720</value>
+			<value level="7">-740</value>
+			<value level="8">-760</value>
+			<value level="9">-780</value>
+			<value level="10">-800</value>
+			<value level="11">-820</value>
+			<value level="12">-840</value>
+			<value level="13">-860</value>
+			<value level="14">-880</value>
+			<value level="15">-900</value>
+			<value level="16">-910</value>
+			<value level="17">-920</value>
+			<value level="18">-930</value>
+			<value level="19">-940</value>
+			<value level="20">-950</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<mpConsume>
+			<value level="1">16</value>
+			<value level="2">22</value>
+			<value level="3">27</value>
+			<value level="4">31</value>
+			<value level="5">34</value>
+			<value level="6">37</value>
+			<value level="7">39</value>
+			<value level="8">41</value>
+			<value level="9">42</value>
+			<value level="10">44</value>
+			<value level="11">46</value>
+			<value level="12">48</value>
+			<value level="13">51</value>
+			<value level="14">53</value>
+			<value level="15">55</value>
+			<value level="16">57</value>
+			<value level="17">59</value>
+			<value level="18">61</value>
+			<value level="19">63</value>
+			<value level="20">65</value>
+		</mpConsume>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">36</value>
+					<value level="2">48</value>
+					<value level="3">96</value>
+					<value level="4">108</value>
+					<value level="5">126</value>
+					<value level="6">152</value>
+					<value level="7">168</value>
+					<value level="8">182</value>
+					<value level="9">189</value>
+					<value level="10">196</value>
+					<value level="11">204</value>
+					<value level="12">211</value>
+					<value level="13">218</value>
+					<value level="14">228</value>
+					<value level="15">240</value>
+					<value level="16">247</value>
+					<value level="17">254</value>
+					<value level="18">261</value>
+					<value level="19">268</value>
+					<value level="20">276</value>
+				</power>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="3">-30</value>
+					<value level="4">-30</value>
+					<value level="5">-30</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+					<value level="8">-30</value>
+					<value level="9">-30</value>
+					<value level="10">-30</value>
+					<value level="11">-30</value>
+					<value level="12">-30</value>
+					<value level="13">-30</value>
+					<value level="14">-30</value>
+					<value level="15">-30</value>
+					<value level="16">-30</value>
+					<value level="17">-30</value>
+					<value level="18">-30</value>
+					<value level="19">-30</value>
+					<value level="20">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87778" toLevel="15" name="Transcendent Bright Dance">
+		<!-- <font color="FED7A0">Light magic</font>. A sphere containing the power of light attacks the enemy. The sphere has different forms depending on attack range. Inflicts magic damage 3 times with 120 power. The skill can only be used in transcendent instance zones. -->
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5500</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<effects>
+			<effect name="MagicalDamage">
+				<power>
+					<value level="1">120</value>
+					<value level="2">143</value>
+					<value level="3">191</value>
+					<value level="4">228</value>
+					<value level="5">246</value>
+					<value level="6">255</value>
+					<value level="7">264</value>
+					<value level="8">273</value>
+					<value level="9">285</value>
+					<value level="10">300</value>
+					<value level="11">309</value>
+					<value level="12">318</value>
+					<value level="13">327</value>
+					<value level="14">336</value>
+					<value level="15">345</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87779" toLevel="15" name="Transcendent Bright Dance">
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5500</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="87780" toLevel="15" name="Transcendent Bright Dance">
+		<icon>icon.s_sp_bright_dance</icon>
+		<operateType>A3</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>700</castRange>
+		<hitTime>5500</hitTime>
+		<effectPoint>
+			<value level="1">-400</value>
+			<value level="2">-550</value>
+			<value level="3">-680</value>
+			<value level="4">-760</value>
+			<value level="5">-800</value>
+			<value level="6">-820</value>
+			<value level="7">-840</value>
+			<value level="8">-860</value>
+			<value level="9">-880</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
+		</effectPoint>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">62</value>
+			<value level="3">75</value>
+			<value level="4">84</value>
+			<value level="5">88</value>
+			<value level="6">90</value>
+			<value level="7">93</value>
+			<value level="8">95</value>
+			<value level="9">97</value>
+			<value level="10">99</value>
+			<value level="11">100</value>
+			<value level="12">102</value>
+			<value level="13">103</value>
+			<value level="14">104</value>
+			<value level="15">105</value>
+		</mpConsume>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-12</affectLimit>
+		<fanRange>0;0;400;90</fanRange>
+	</skill>
+	<skill id="87781" toLevel="20" name="Elemental Sphere Mastery">
+		<!-- Enhances the ability of handling magic power. <font color="00FF00">When using magic two-handed blunt weapon:</font>. M. Atk. +80 -->
+		<icon>icon.s_sp_spirit_orb_mastery</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<amount>
+					<value level="1">80</value>
+					<value level="2">120</value>
+					<value level="3">200</value>
+					<value level="4">300</value>
+					<value level="5">600</value>
+					<value level="6">700</value>
+					<value level="7">800</value>
+					<value level="8">850</value>
+					<value level="9">900</value>
+					<value level="10">1000</value>
+					<value level="11">1100</value>
+					<value level="12">1200</value>
+					<value level="13">1300</value>
+					<value level="14">1400</value>
+					<value level="15">1500</value>
+					<value level="16">1650</value>
+					<value level="17">1800</value>
+					<value level="18">1950</value>
+					<value level="19">2200</value>
+					<value level="20">2500</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87782" toLevel="20" name="Element Weaver's Armor Mastery">
+		<!-- It is easier to handle magic with robe equipped. <font color="00FF00">Equipped robe effect</font>. P. Def. +20. M. Def. +30. Max HP +100. MP Recovery Rate +3. M. Skill Cooldown -15% -->
+		<icon>icon.s_sp_spirit_armor_mastery</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">60</value>
+					<value level="3">105</value>
+					<value level="4">150</value>
+					<value level="5">300</value>
+					<value level="6">375</value>
+					<value level="7">450</value>
+					<value level="8">510</value>
+					<value level="9">570</value>
+					<value level="10">600</value>
+					<value level="11">630</value>
+					<value level="12">660</value>
+					<value level="13">690</value>
+					<value level="14">720</value>
+					<value level="15">750</value>
+					<value level="16">780</value>
+					<value level="17">810</value>
+					<value level="18">840</value>
+					<value level="19">870</value>
+					<value level="20">900</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">100</value>
+					<value level="2">150</value>
+					<value level="3">200</value>
+					<value level="4">250</value>
+					<value level="5">300</value>
+					<value level="6">350</value>
+					<value level="7">400</value>
+					<value level="8">450</value>
+					<value level="9">500</value>
+					<value level="10">550</value>
+					<value level="11">600</value>
+					<value level="12">650</value>
+					<value level="13">700</value>
+					<value level="14">750</value>
+					<value level="15">800</value>
+					<value level="16">1000</value>
+					<value level="17">1200</value>
+					<value level="18">1500</value>
+					<value level="19">1650</value>
+					<value level="20">1800</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">8</value>
+					<value level="4">10</value>
+					<value level="5">15</value>
+					<value level="6">15</value>
+					<value level="7">15</value>
+					<value level="8">15</value>
+					<value level="9">15</value>
+					<value level="10">15</value>
+					<value level="11">15</value>
+					<value level="12">15</value>
+					<value level="13">15</value>
+					<value level="14">15</value>
+					<value level="15">15</value>
+					<value level="16">15</value>
+					<value level="17">15</value>
+					<value level="18">15</value>
+					<value level="19">15</value>
+					<value level="20">15</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87783" toLevel="1" name="Children of the Mother Tree">
+		<!-- Grants the blessing of the Mother Tree. HP Recovery Rate +10%. MP Recovery Rate +10%. M. Skill Critical Rate +8%. Max Speed +10 -->
+		<icon>icon.s_sp_children_of_world_tree</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="Speed">
+				<amount>
+					<value level="1">10</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">8</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>
+					<value level="1">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87784" toLevel="1" name="Serenade of Mana">
+		<!-- Changes the form of magic two-handed blunt weapon turning it into a more suitable weapon touched by mana. <font color="00FF00">When using magic two-handed blunt weapon:</font>. - Turns the weapon into an elemental sphere. - Increases Casting Spd. - Allows to use various kinds of magic. <font color="FED7A0">The elemental sphere's appearance does not change.</font> -->
+		<icon>icon.s_sp_serenade_of_mana</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="87785" toLevel="1" name="Talent for Magic">
+		<!-- The inherent magic gift allows to handle magic even more skillfully. M. Atk. +10%. M. Skill Cooldown -5% -->
+		<icon>icon.s_sp_talent_of_magic</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<amount>
+					<value level="1">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87786" toLevel="1" name="Mana Extension">
+		<!-- Increases the character's MP. Max MP +15%. Max MP +2000 -->
+		<icon>icon.s_sp_mana_extension</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87787" toLevel="1" name="Simple Meditation">
+		<!-- Contemplation and reflection can strengthen the spirit just as well as physical training. Max HP +300. Max MP +300. M. Atk. +10%. M. Skill Power +5%. Spiritshot damage +5% -->
+		<icon>icon.s_sp_ordinary_meditation</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<amount>
+					<value level="1">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">300</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">300</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87788" toLevel="1" name="Critical Magic">
+		<!-- The skill of working with mana is a matter of habit. M. Skill Critical Rate +10%. Increases M. Skill Critical Rate. -->
+		<icon>icon.s_sp_critical_magic</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="87789" toLevel="1" name="Light Mastery">
+		<!-- Enhances the knowledge of <font color="FED7A0">light magic</font>. When using <font color="FED7A0">light magic</font> with a 20%chance. cancels <font color="FFFF00">Absolute skills and other skills of this kind</font>. <font color="FED7A0">Bright Dance</font> → <font color="FED7A0">Bright Dance of Light</font>. Reduces casting time. Number of attacks: 2 → 3. <font color="FED7A0">Claidheamh Soluis</font> → <font color="FED7A0">Shining Claidheamh Soluis</font>. Reduces casting time. Increases attack power and max number of targets. Increases Spirit Ore consumption. -->
+		<icon>icon.s_sp_light_mastery</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="87790" toLevel="1" name="Extreme Magic">
+		<!-- Enhances <font color="00AAFF">fire magic</font> and <font color="FF0000">ice magic</font> to the maximim. <font color="FF0000">Fire Sphere</font>/ <font color="00AAFF">Ice Sphere</font>. Increases attack power and the number of attacks. <font color="FF0000">Blazing Tempest</font>/ <font color="00AAFF">Glacier Strike</font>. Increases power and attack range. -->
+		<icon>icon.s_sp_extream_magic</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="87791" toLevel="1" name="One With Nature">
+		<!-- Grants the feeling of unity with nature and better understanding of its power. <font color="00FF00">Nature Spirit</font> → <font color="00FF00">Nature's Blessing</font>. Increases HP/ MP Recovery Rate. Decreases debuff/ anomaly duration. When using light magic, with a 100% chance applies the enhanced buff. When using <font color="FED7A0">light magic</font>, enhanced the applied buff. <font color="00FF00">Florescence</font> → <font color="00FF00">Full Florescence</font>. Immediately summons <font color="00FF00">Twining Plants</font>. Immediately triggerd the combination of influenced with <font color="FED7A0">light magic</font>. Upon getting the skill, Spirit Ore consumption for enhanced magic increases. -->
+		<icon>icon.s_sp_natural_assimilation</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="87792" toLevel="1" name="Ultimate Dispel">
+		<!-- Cancels Absolute skills and other skills of this kind. -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>0</reuseDelay>
+		<castRange>-1</castRange>
+		<hitTime>0</hitTime>
+		<effectPoint>-100</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+</list>
